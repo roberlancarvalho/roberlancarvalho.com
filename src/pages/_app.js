@@ -28,10 +28,10 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Roberlan Carvalho</title>
-        <link rel="shortcut icon" href="/assets/img/willianjusten-icon.png" />
+        <link rel="shortcut icon" href="/assets/img/roberlancarvalho-icon.png" />
         <link
           rel="apple-touch-icon"
-          href="/assets/img/willianjusten-icon.png"
+          href="/assets/img/roberlancarvalho-icon.png"
         />
         <meta name="theme-color" content="#06092B" />
         <meta

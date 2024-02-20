@@ -2,15 +2,15 @@ import * as S from './styled'
 
 const Project = ({ title, description, link, image }) => {
   return (
-    <S.CourseLink href={link}>
-      <S.CourseWrapper>
-        <S.CourseImage src={image} alt={title} />
-        <S.CourseInfo>
-          <S.CourseTitle>{title}</S.CourseTitle>
-          <S.CourseDescription>{description}</S.CourseDescription>
-        </S.CourseInfo>
-      </S.CourseWrapper>
-    </S.CourseLink>
+    <S.ProjectLink href={link}>
+      <S.ProjectWrapper>
+        <S.ProjectImage src={image} alt={title} />
+        <S.ProjectInfo>
+          <S.ProjectTitle>{title}</S.ProjectTitle>
+          <S.ProjectDescription>{description}</S.ProjectDescription>
+        </S.ProjectInfo>
+      </S.ProjectWrapper>
+    </S.ProjectLink>
   )
 }
 

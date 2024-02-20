@@ -1,24 +1,24 @@
 const links = [
   {
-    label: 'Github',
-    url: 'https://github.com/roberlancarvalho'
+    label: 'Instagram',
+    url: 'https://www.instagram.com/roberlancarvalho/'
   },
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/RoberlanCarvalh'
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/roberlancarvalho/'
+  },
+  {
+    label: 'Github',
+    url: 'https://github.com/roberlancarvalho'
   },
   {
     label: 'Youtube',
     url: 'https://www.youtube.com/@RoberlanCarvalho/?sub_confirmation=1'
   },
   {
-    label: 'Instagram',
-    url: 'https://www.instagram.com/roberlancarvalho/'
+    label: 'Twitter',
+    url: 'https://twitter.com/RoberlanCarvalh'
   },
-  {
-    label: 'Unsplash',
-    url: 'https://unsplash.com/@willianjusten'
-  }
 ]
 
 export default links

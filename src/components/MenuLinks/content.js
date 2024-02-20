@@ -17,11 +17,11 @@ const links = [
   },
   {
     label: 'Viagens',
-    url: 'https://my-trips.willianjusten.com.br/'
+    url: 'https://google.com/'
   },
   {
     label: 'Fotografia',
-    url: 'https://photos.willianjusten.com.br'
+    url: 'https://google.com/'
   }
 ]
 

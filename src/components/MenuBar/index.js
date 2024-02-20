@@ -6,8 +6,8 @@ import { Home } from '@styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube'
-import { LightBulb as Light } from '@styled-icons/entypo/LightBulb'
-import { GraduationCap } from '@styled-icons/fa-solid/GraduationCap'
+import { DarkTheme as Theme } from '@styled-icons/fluentui-system-regular/DarkTheme'
+import { WindowDevEdit as Dev } from '@styled-icons/fluentui-system-filled/WindowDevEdit'
 import { Menu } from '@styled-icons/boxicons-regular/Menu'
 
 import * as S from './styled'
@@ -41,7 +41,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           </S.MenuBarLink>
         </Link>
 
-        <Link href="/search" passHref>
+        <Link href="/search/" passHref>
           <S.MenuBarLink
             title="Pesquisar no Blog"
             className={router.pathname === '/search' ? 'active' : ''}
@@ -59,7 +59,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
               title="Ver portfolio"
             >
               <S.MenuBarItem>
-                <GraduationCap />
+                <Dev />
                 <S.MenuBarNotification />
               </S.MenuBarItem>
             </S.MenuBarLink>
@@ -96,7 +96,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           className={theme}
           isDarkMode={isDarkMode}
         >
-          <Light />
+          <Theme />
         </S.MenuBarItem>
         <S.MenuBarItem
           title="Ir para o Topo"
