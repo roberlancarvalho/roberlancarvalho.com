@@ -1,8 +1,8 @@
 backend:
   name: github
   branch: main
-  repo: willianjusten/willianjusten.com.br
-  base_url: https://willianjusten.com.br/
+  repo: roberlancarvalho/meu-site
+  base_url: https://roberlancarvalho.com/
   auth_endpoint: api/auth/
 
 media_folder: public/assets/img

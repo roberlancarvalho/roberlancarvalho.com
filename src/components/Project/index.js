@@ -1,9 +1,10 @@
 import * as S from './styled'
 
-const Course = ({ title, description, link }) => {
+const Project = ({ title, description, link, image }) => {
   return (
     <S.CourseLink href={link}>
       <S.CourseWrapper>
+        <S.CourseImage src={image} alt={title} />
         <S.CourseInfo>
           <S.CourseTitle>{title}</S.CourseTitle>
           <S.CourseDescription>{description}</S.CourseDescription>
@@ -13,4 +14,4 @@ const Course = ({ title, description, link }) => {
   )
 }
 
-export default Course
+export default Project

@@ -53,10 +53,10 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
         </Link>
 
         <S.MenuBarGroupDesktop>
-          <Link href="/cursos/" passHref>
+          <Link href="/portfolio/" passHref>
             <S.MenuBarLink
-              className={router.pathname === '/cursos' ? 'active' : ''}
-              title="Ver cursos"
+              className={router.pathname === '/portfolio' ? 'active' : ''}
+              title="Ver portfolio"
             >
               <S.MenuBarItem>
                 <GraduationCap />
@@ -67,7 +67,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
 
           <S.MenuBarExternalLink
             title="YouTube Videos"
-            href="https://www.youtube.com/WillianJustenCursos/?sub_confirmation=1"
+            href="https://www.youtube.com/@RoberlanCarvalho/?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -26,15 +26,15 @@ const BlogPost = ({ post }) => {
   return (
     <>
       <NextSeo
-        title={`${post.frontmatter.title} - Willian Justen`}
+        title={`${post.frontmatter.title} - Roberlan Carvalho`}
         description={post.frontmatter.description}
         openGraph={{
-          url: `https://willianjusten.com.br/${post.slug}`,
-          title: `${post.frontmatter.title} - Willian Justen`,
+          url: `https://roberlancarvalho.com/${post.slug}`,
+          title: `${post.frontmatter.title} - Roberlan Carvalho`,
           description: post.frontmatter.description,
           images: [
             {
-              url: `https://og-image-service.willianjusten.com.br/${encodeURIComponent(
+              url: `https://og-image-service.roberlancarvalho.com.br/${encodeURIComponent(
                 post.frontmatter.title
               )}.png`,
               alt: `${post.frontmatter.title}`

@@ -6,7 +6,7 @@ import { MainContent } from 'styles/base'
 const AboutPage = () => (
   <>
     <NextSeo
-      title="Sobre mim | Roberlan Carvalho"
+      title="Sobre Mim | Roberlan Carvalho"
       description="Mergulhe na jornada de Roberlan Carvalho, um desenvolvedor Full Stack com uma paixão vibrante por tecnologia e inovação."
       openGraph={{
         type: 'website',
@@ -28,7 +28,7 @@ const AboutPage = () => (
       }}
     />
     <MainContent>
-      <h1>Sobre mim</h1>
+      <h1>Sobre Mim</h1>
       <p>
         Saudações! Meu nome é Roberlan Carvalho, um entusiasta da tecnologia que
         transformou a paixão em profissão. Atualmente, desbravo o mundo da

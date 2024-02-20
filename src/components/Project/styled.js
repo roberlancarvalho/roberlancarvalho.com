@@ -1,7 +1,6 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
-
-import transitions from 'styles/transitions'
+import styled from 'styled-components';
+import media from 'styled-media-query';
+import transitions from 'styles/transitions';
 
 export const CourseWrapper = styled.section`
   align-items: center;
@@ -14,7 +13,7 @@ export const CourseWrapper = styled.section`
     flex-direction: column;
     padding: 2rem 1rem;
   `}
-`
+`;
 
 export const CourseLink = styled.a`
   color: var(--texts);
@@ -25,7 +24,7 @@ export const CourseLink = styled.a`
   &:hover {
     color: var(--highlight);
   }
-`
+`;
 
 export const CourseInfo = styled.div`
   display: flex;
@@ -35,16 +34,22 @@ export const CourseInfo = styled.div`
   ${media.lessThan('large')`
     margin: 0;
   `}
-`
+`;
 
 export const CourseTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
-`
+`;
 
 export const CourseDescription = styled.h2`
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
-`
+`;
+
+export const CourseImage = styled.img`
+  width: 100px; /* Ajuste conforme necessário */
+  height: auto; /* Isso mantém a proporção da imagem */
+  margin-right: 20px;
+`;
