@@ -38,7 +38,7 @@ const BlogList = ({ posts }) => {
     <>
       <NextSeo
         title="Roberlan Carvalho"
-        description="Um entusiasta de tecnologia e desenvolvedor Full Stack, explorando o mundo dos códigos entre melodias musicais e jogos, compartilhando aprendizados e inovações."
+        description="Desenvolvedor Full Stack imerso em tecnologia, música e jogos, partilhando inovações."
         openGraph={{
           images: [
             {
