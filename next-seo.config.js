@@ -6,7 +6,7 @@ const DefaultSEO = {
     site_name: 'Roberlan Carvalho'
   },
   twitter: {
-    handle: '@Willian_justen',
+    handle: '@RoberlanCarvalh',
     site: '@site',
     cardType: 'summary_large_image'
   }
