@@ -4,7 +4,7 @@ backend:
   repo: roberlancarvalho/meu-site
   base_url: https://roberlancarvalho.com/
   auth_endpoint: api/auth/
-  auth_callback: http://localhost:3000/admin/auth/callback
+  auth_callback: https://roberlancarvalho.com/admin/auth/callback
 
 media_folder: public/assets/img
 public_folder: /assets/img
