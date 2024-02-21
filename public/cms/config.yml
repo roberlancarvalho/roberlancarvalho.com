@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: main
-  repo: roberlancarvalho/meu-site
+  repo: https://github.com/roberlancarvalho/meu-site
   base_url: https://roberlancarvalho.com/
   auth_endpoint: api/auth/
 
