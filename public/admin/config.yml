@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: roberlancarvalho/roberlancarvalho.com  # Seu repositório GitHub
+  base_url: https://roberlancarvalho.com  # URL base para a autenticação
+  auth_endpoint: api/auth  # Endpoint de autenticação correspondente ao Authorization callback URL no GitHub
+
+media_folder: public/assets/img  # Pasta onde os arquivos de mídia serão salvos
+public_folder: /assets/img  # Caminho público para acessar os arquivos de mídia
+
+publish_mode: editorial_workflow  # Habilita o modo editorial para rascunhos e revisões
+
+slug:
+  encoding: 'ascii'  # Codificação para os slugs
+  clean_accents: true  # Remove acentos dos slugs
+
+collections:
+  - name: posts  # Nome da coleção, usado nas rotas
+    label: Posts  # Rótulo da coleção, usado na interface do usuário
+    folder: posts  # Caminho para a pasta onde os documentos são armazenados
+    create: true  # Permite aos usuários criar novos documentos nesta coleção
+    slug: '{{slug}}'  # Template para o nome do arquivo, baseado no título do documento
+    fields:  # Campos para cada documento
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD hh:mm:ss' }
+      - { label: 'Post Image', name: 'image', widget: 'image', required: false }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Main Class'
+        name: 'main-class'
+        widget: 'select'
+        options: ['jekyll', 'css', 'js', 'html', 'svg', 'dev', 'misc']
+      - label: 'Color'
+        name: 'color'
+        widget: 'select'
+        options:
+          - { label: 'Jekyll', value: '#B31917' }
+          - { label: 'CSS', value: '#2DA0C3' }
+          - { label: 'JS', value: '#D6BA32' }
+          - { label: 'HTML', value: '#EB7728' }
+          - { label: 'SVG', value: '#7D669E' }
+          - { label: 'Dev', value: '#637a91' }
+          - { label: 'Misc', value: '#7AAB13' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
+      - { label: 'Category', name: 'categories', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
