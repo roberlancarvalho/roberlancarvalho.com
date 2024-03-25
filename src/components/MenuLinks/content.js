@@ -12,17 +12,17 @@ const links = [
     url: '/portfolio'
   },
   {
-    label: 'Séries',
-    url: '/series'
-  },
-  {
-    label: 'Viagens',
-    url: 'https://google.com/'
-  },
-  {
-    label: 'Fotografia',
-    url: 'https://google.com/'
+    label: 'Trilhas e Viagens',
+     url: 'https://google.com/'
   }
+  // {
+  //   label: 'Séries',
+  //   url: '/series'
+  // },
+  // {
+  //   label: 'Fotografia',
+  //   url: 'https://google.com/'
+  // }
 ]
 
 export default links
