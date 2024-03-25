@@ -4,15 +4,15 @@ description: Segundo O Guia do Mochileiro das Galáxias, 42 é a reposta para
   todas as perguntas
 date: 2021-12-08 03:45:33
 thumbnail: /assets/img/unnamed.jpg
-category: artigo
-background: "#C03EFA"
+main-class: livros
+background: "Livros"
 ---
 ## A raiz da questão
 
 Segundo Douglas Adams, autor da "trilogia de cinco" de O Guia do Mochileiro das Galáxias, 42 é a reposta para todas as perguntas, como o próprio afirma.
 Mas de onde ele tirou isso?
 
-Se você já leu O Guia do Mochileiro das Galáxias, com certeza deve ter se deparado com o trecho em que o robô é questionado e responde que após muitos anos de cálculo, ele chegou na seguinte conclusão a respeito do universo: 
+Se você já leu O Guia do Mochileiro das Galáxias, com certeza deve ter se deparado com o trecho em que o robô é questionado e responde que após muitos anos de cálculo, ele chegou na seguinte conclusão a respeito do universo:
 a resposta para questões inexplicáveis como “qual o significado da vida, do universo e tudo mais" e a resposta para tal complexidade existencial é simplesmente “42”. 42? isso mesmo, 42.
 Mas porque 42? E de onde tiraram isso?
 
@@ -20,7 +20,7 @@ Mas porque 42? E de onde tiraram isso?
 
 No livro, ele fala sobre uma civilização que busca a resposta para todas as coisas. E para isso acabam construindo um robô superinteligente que era capaz de responder qualquer pergunta.
 
-E quando lhe pergunta qual o sentido da vida, do universo e tudo mais, ele deu um prazo de milhares de anos para fazer o seus cálculos e descobrir a resposta. E então, a reposta irônica foi apenas 42. 
+E quando lhe pergunta qual o sentido da vida, do universo e tudo mais, ele deu um prazo de milhares de anos para fazer o seus cálculos e descobrir a resposta. E então, a reposta irônica foi apenas 42.
 "Após sete milhões e meio de equações complexas e cálculos difíceis, retornou a resposta – 42".
 
 ![](/assets/img/camiseta-estampa-42-guia-mochileiro-galaxias1.jpg)
@@ -29,7 +29,7 @@ E quando lhe pergunta qual o sentido da vida, do universo e tudo mais, ele deu u
 
 
 
-Ao ser questionado sobre porque 42, Douglas Adams reponde: 
+Ao ser questionado sobre porque 42, Douglas Adams reponde:
 
 > "A resposta é muito simples. Foi uma brincadeira. Tinha que ser um número, um ordinário, pequeno e eu escolhi esse. Representações binárias, base 13, macacos tibetanos são totalmente sem sentido. Eu sentei à minha mesa, olhei para o jardim e pensei “42 vai funcionar” e escrevi. Fim da história".
 
@@ -68,7 +68,7 @@ Isso porque todos os cubos são múltiplos de 9 ou estão a um número inteiro d
 
 Impressionantemente, apenas 33 e 42 eram exceções: ambos estão a três unidades de distância de múltiplos de 9.\
 \
-E existem as teorias relacionadas ao cinema/livros: 
+E existem as teorias relacionadas ao cinema/livros:
 
 * #### Harry Potter
 

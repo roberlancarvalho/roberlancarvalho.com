@@ -28,17 +28,18 @@ collections:
       - label: 'Main Class'
         name: 'main-class'
         widget: 'select'
-        options: ['jekyll', 'css', 'js', 'html', 'svg', 'dev', 'misc']
+        options: ['jekyll', 'livros', 'js', 'web', 'svg', 'dev', 'misc']
       - label: 'Color'
         name: 'color'
         widget: 'select'
         options:
           - { label: 'Jekyll', value: '#B31917' }
-          - { label: 'CSS', value: '#2DA0C3' }
+          - { label: 'Livros', value: '#2DA0C3' }
           - { label: 'JS', value: '#D6BA32' }
+          - { label: 'Web', value: '#EB7728' }
           - { label: 'HTML', value: '#EB7728' }
           - { label: 'SVG', value: '#7D669E' }
-          - { label: 'Dev', value: '#637a91' }
+          - { label: 'Dev', value: '#158e99' }
           - { label: 'Misc', value: '#7AAB13' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
       - { label: 'Category', name: 'categories', widget: 'list', required: false }

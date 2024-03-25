@@ -3,8 +3,8 @@ title: Primeiros passos como programador
 description: Por onde começar na programação
 date: 2020-07-13 03:52:35
 thumbnail: /assets/img/programacao.jpg
-category: estudos
-background: "#C2542B"
+main-class: dev
+color: '#7AAB13'
 ---
 Para aqueles que almejam entrar na carreira de TI, mais precisamente na área de programação, é importante conhecer a área e principalmente se identificar.\
 Desenvolver ou programar não é para qualquer um, mas para quem realmente se identifica, e o mais importante, gosta disso - como qualquer outra profissão. \
@@ -20,7 +20,7 @@ Comece estudando (muito). Você pode encontrar diversos cursos gratuitos na inte
 
 ### O barato de programar
 
-Programar é divertido e bastante útil, além de proporcionar uma melhoria no seu raciocínio lógico. 
+Programar é divertido e bastante útil, além de proporcionar uma melhoria no seu raciocínio lógico.
 
 Por isso, antes de iniciar nos estudos de uma linguagem de programação específica, é de suma importância entender o que envolve a programação, sendo assim, vê-se a necessidade de aprender sobre **algoritmos** e **lógica de programação**. Assim você irá ter um embasamento importante, além de preparar o seu cérebro para a programação de fato. Cursos relacionados à algoritmos e lógica de programação, você pode encontrar diversos gratuitos em várias plataformas, como já citei acima.
 

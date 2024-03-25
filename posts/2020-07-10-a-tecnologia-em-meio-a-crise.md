@@ -3,8 +3,8 @@ title: A tecnologia em meio a crise
 description: As soluções pela TI em meio às crises
 date: 2020-07-10 07:54:23
 thumbnail: /assets/img/criar-curso-online.jpg
-category: outros
-background: "#7AAB13"
+main-class: misc
+color: '#Misc'
 ---
 Já estamos há alguns meses de quarentena e por esse motivo, alguns profissionais que já trabalhavam em projetos de forma a usar computadores e a tecnologia para realizar suas atividades, como advogados, professores, profissionais de TI, gerentes de projetos, designers, jornalistas, escritores, contadores, administradores, dentre outros, precisaram optar pelo Home Office para dar continuidade com seus trabalhos.
 

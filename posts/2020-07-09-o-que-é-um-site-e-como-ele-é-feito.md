@@ -4,8 +4,8 @@ description: Do que se trata um site e como é feito
 date: 2020-07-09 03:29:58
 image: /assets/img/lib-js-testes.jpg
 thumbnail: assets/img/lib-js-testes.jpg
-category: web
-background: "#2516C2"
+main-class: web
+background: "Web"
 ---
 Um site, basicamente, é uma página web, com informações arquivadas num servidor de hospedagem, acessada através de um endereço (IP) por um domínio, ex.: seusite.com.br.
 
@@ -18,7 +18,7 @@ Um site, criado de forma nativa, é desenvolvido em HTML (linguagem de marcaçã
 Veja abaixo um exemplo de uma página simples em HTML:
 
 ```razor
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
