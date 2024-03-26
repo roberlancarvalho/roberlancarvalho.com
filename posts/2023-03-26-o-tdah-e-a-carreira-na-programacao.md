@@ -1,9 +1,10 @@
 ---
 layout: post
-date: 2024-02-20 05:00:40
-image: 'public/assets/img/tdah.png'
+date: 2024-03-25 05:00:40
+image: /assets/img/tdah.png
 title: O TDAH e a Carreira na Programação
 description: Os Desafios e as Vantagens de TDAH no dia a dia de um programador
+introduction: Como um indivíduo que enfrenta os desafios do Transtorno do Déficit de Atenção e Hiperatividade (TDAH) diariamente...
 main-class: dev
 color: '#7AAB13'
 tags:
