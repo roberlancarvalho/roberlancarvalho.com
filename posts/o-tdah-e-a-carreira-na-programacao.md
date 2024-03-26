@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-02-20 05:00:40
-image: '/assets/img/vscode/vscode.png'
+date: 2024-03-25 05:00:40
+image: 'assets/img/tdah.png'
 title: O TDAH e a Carreia na Programação
 description: Os Desafios e as Vantagens de TDAH na Programação
 main-class: dev
