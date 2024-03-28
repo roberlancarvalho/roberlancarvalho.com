@@ -1,12 +1,14 @@
 ---
 title: A resposta para tudo é 42
-description: Segundo O Guia do Mochileiro das Galáxias, 42 é a reposta para
-  todas as perguntas
+description: "Segundo O Guia do Mochileiro das Galáxias, 42 é a resposta para todas as perguntas."
 date: 2021-12-08 03:45:33
 thumbnail: /assets/img/unnamed.jpg
-main-class: livros
-background: "Livros"
+main-class: leitura
+background: "leitura"
+color: "#1E88E5"
 ---
+
+
 ## A raiz da questão
 
 Segundo Douglas Adams, autor da "trilogia de cinco" de O Guia do Mochileiro das Galáxias, 42 é a reposta para todas as perguntas, como o próprio afirma.

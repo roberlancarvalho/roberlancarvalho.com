@@ -6,10 +6,9 @@ title: O TDAH e a Carreira na Programação
 description: Os Desafios e as Vantagens de TDAH no dia a dia de um programador
 introduction: Como um indivíduo que enfrenta os desafios do Transtorno do Déficit de Atenção e Hiperatividade (TDAH) diariamente...
 main-class: dev
-color: '#7AAB13'
+color: '#EC407A'
 tags:
   - dev
-  - programacao
 ---
 
 ## Introdução

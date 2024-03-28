@@ -4,8 +4,9 @@ description: Por onde começar na programação
 date: 2020-07-13 03:52:35
 thumbnail: /assets/img/programacao.jpg
 main-class: dev
-color: '#7AAB13'
+color: '#EC407A'
 ---
+
 Para aqueles que almejam entrar na carreira de TI, mais precisamente na área de programação, é importante conhecer a área e principalmente se identificar.\
 Desenvolver ou programar não é para qualquer um, mas para quem realmente se identifica, e o mais importante, gosta disso - como qualquer outra profissão. \
 PS: não entre achando que vai ser rico.

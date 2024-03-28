@@ -3,10 +3,12 @@ title: O que é um site? E como ele é feito?
 description: Do que se trata um site e como é feito
 date: 2020-07-09 03:29:58
 image: /assets/img/lib-js-testes.jpg
-thumbnail: assets/img/lib-js-testes.jpg
-main-class: web
-background: "Web"
+thumbnail: /assets/img/lib-js-testes.jpg
+main-class: dev
+background: "dev"
+color: '#EC407A'
 ---
+
 Um site, basicamente, é uma página web, com informações arquivadas num servidor de hospedagem, acessada através de um endereço (IP) por um domínio, ex.: seusite.com.br.
 
 O cliente faz a requisição no endereço das informações do site, digitando no navegador o endereço reservado à página e o servidor lhe retorna os dados solicitados na página.

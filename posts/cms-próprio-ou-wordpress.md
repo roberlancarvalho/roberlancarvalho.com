@@ -3,9 +3,10 @@ title: CMS próprio ou Wordpress?
 description: Qual a melhor opção na hora de escolher o CMS para a sua aplicação?
 date: 2021-12-08 05:53:44
 thumbnail: /assets/img/cms-.png
-main-class: web
-background: "Web"
+main-class: tech
+color: '#E53935'
 ---
+
 ### O que é um CMS?
 
 Antes de qualquer coisa, o que é um CMS?\
@@ -13,7 +14,7 @@ CMS (Content Management System), Sistema de gerenciamento de conteúdo. Usado ge
 
 Alguns clientes, no início da solicitação do desenvolvimento da sua aplicação web, optam por um CMS popular, já usado no mercado, como é o caso do [Wordpress](https://br.wordpress.org/), que possui nele, diversas funcionalidades e plugins a fim de gerenciar o conteúdo, sem que seja necessário alteração alguma no código pelo desenvolvedor da aplicação.
 
-![Wordpress](/assets/img/cms-.png "Wordpress")
+![Wordpress](assets/img/cms-.png "Wordpress")
 
 Porém, existe a possibilidade da criação de um CMS próprio, customizado funcionando exclusivamente para a empresa/cliente solicitante do projeto. Neste caso, faz-se necessário um prazo maior para o desenvolvimento da plataforma, de acordo com o pedido do cliente.
 

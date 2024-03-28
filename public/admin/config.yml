@@ -28,19 +28,27 @@ collections:
       - label: 'Main Class'
         name: 'main-class'
         widget: 'select'
-        options: ['jekyll', 'livros', 'js', 'web', 'svg', 'dev', 'misc']
+        options: ['tech', 'leitura', 'js', 'dev', 'code', 'design', 'devops', 'tips', 'ia', 'css', 'dicas', 'ui/ux', 'seg']
+
+
       - label: 'Color'
         name: 'color'
         widget: 'select'
         options:
-          - { label: 'Jekyll', value: '#B31917' }
-          - { label: 'Livros', value: '#2DA0C3' }
-          - { label: 'JS', value: '#D6BA32' }
-          - { label: 'Web', value: '#EB7728' }
-          - { label: 'HTML', value: '#EB7728' }
-          - { label: 'SVG', value: '#7D669E' }
-          - { label: 'Dev', value: '#158e99' }
-          - { label: 'Misc', value: '#7AAB13' }
+          - { label: 'Dev', value: '#EC407A' }
+          - { label: 'Tech', value: '#007BFF' }
+          - { label: 'Leitura', value: '#1E88E5' }
+          - { label: 'JS', value: '#FFEB3B' }
+          - { label: 'Code', value: '#FF9800' }
+          - { label: 'Design', value: '#7E57C2' }
+          - { label: 'DevOps', value: '#00ACC1' }
+          - { label: 'Tips', value: '#8BC34A' }
+          - { label: 'IA', value: '#3776AB' }
+          - { label: 'CSS', value: '#2196F3' }
+          - { label: 'Dicas', value: '#FFC107' }
+          - { label: 'UI/UX', value: '#9C27B0' }
+          - { label: 'Seg', value: '#F44336' }
+
       - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
       - { label: 'Category', name: 'categories', widget: 'list', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }

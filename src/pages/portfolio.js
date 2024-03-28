@@ -4,46 +4,53 @@ import { MainContent } from 'styles/base'
 
 const projectsList = [
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1.',
+    title: 'Master Point',
+    description: 'Software de gestão empresarial integrada.',
     image:
-      'https://avatars.githubusercontent.com/u/19395705?s=400&u=e93e431233af3ce1657749cd251ee13537ae9466&v=4', // Caminho para a imagem do projeto 1
-    link: 'https://example.com/project1'
+      '/assets/img/portfolio/masterpoint.png', // Caminho para a imagem do projeto 1
+    link: '#'
   },
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1.',
+    title: 'Huro Print',
+    description: 'Loja virtual de artigos personalizados.',
     image:
-      'https://avatars.githubusercontent.com/u/19395705?s=400&u=e93e431233af3ce1657749cd251ee13537ae9466&v=4', // Caminho para a imagem do projeto 1
-    link: 'https://example.com/project1'
+      '/assets/img/portfolio/huroprint.png', // Caminho para a imagem do projeto 1
+    link: '#'
   },
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1.',
+    title: 'Set Tarefas',
+    description: 'Software de gestão de tafefas para setores e individual.',
     image:
-      'https://avatars.githubusercontent.com/u/19395705?s=400&u=e93e431233af3ce1657749cd251ee13537ae9466&v=4', // Caminho para a imagem do projeto 1
-    link: 'https://example.com/project1'
+      '/assets/img/portfolio/settarefas.png', // Caminho para a imagem do projeto 1
+    link: '#'
   },
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1.',
+    title: 'Cyber Aid',
+    description: 'Sistema online de doações e acompanhamento.',
     image:
-      'https://avatars.githubusercontent.com/u/19395705?s=400&u=e93e431233af3ce1657749cd251ee13537ae9466&v=4', // Caminho para a imagem do projeto 1
-    link: 'https://example.com/project1'
+      '/assets/img/portfolio/cyberaid.png', // Caminho para a imagem do projeto 1
+    link: '#'
   },
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1.',
+    title: 'Gama GPS',
+    description: 'Site intitucional.',
     image:
-      'https://avatars.githubusercontent.com/u/19395705?s=400&u=e93e431233af3ce1657749cd251ee13537ae9466&v=4', // Caminho para a imagem do projeto 1
-    link: 'https://example.com/project1'
+      '/assets/img/portfolio/gamagps.png', // Caminho para a imagem do projeto 1
+    link: '#'
   },
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1.',
+    title: 'Team Comics',
+    description: 'Portal de notícias.',
     image:
-      'https://avatars.githubusercontent.com/u/19395705?s=400&u=e93e431233af3ce1657749cd251ee13537ae9466&v=4', // Caminho para a imagem do projeto 1
-    link: 'https://example.com/project1'
+      '/assets/img/portfolio/teamcomics.png', // Caminho para a imagem do projeto 1
+    link: '#'
+  },
+  {
+    title: 'AP Shared',
+    description: 'Aplicativo de locação de imóveis.',
+    image:
+      '/assets/img/portfolio/apshared.png', // Caminho para a imagem do projeto 1
+    link: '#'
   }
 ]
 
