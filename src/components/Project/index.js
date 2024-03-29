@@ -39,15 +39,15 @@ const Project = ({ title, description, link, image }) => {
             width: '90%',
             backgroundColor: 'var(--background)',
             color: 'var(--texts)',
-            textAlign: 'left'
           },
           overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 1)'
+            backgroundColor: 'var(--background)',
+            opacity: '0.97'
           }
         }}
       >
         <div style={{ textAlign: 'left' }}>
-          <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>{title}</h2>
+        <h2 style={{ fontSize: '24px', marginBottom: '20px', fontWeight: 'bold' }}>{title}</h2>
           <img
             src={image}
             alt={title}
