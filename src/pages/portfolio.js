@@ -6,50 +6,43 @@ const projectsList = [
   {
     title: 'Master Point',
     description: 'Software de gestão empresarial integrada.',
-    image:
-      '/assets/img/portfolio/masterpoint.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/masterpoint.png',
     link: '#'
   },
   {
     title: 'Huro Print',
     description: 'Loja virtual de artigos personalizados.',
-    image:
-      '/assets/img/portfolio/huroprint.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/huroprint.png',
     link: '#'
   },
   {
     title: 'Set Tarefas',
     description: 'Software de gestão de tafefas para setores e individual.',
-    image:
-      '/assets/img/portfolio/settarefas.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/settarefas.png',
     link: '#'
   },
   {
     title: 'Cyber Aid',
     description: 'Sistema online de doações e acompanhamento.',
-    image:
-      '/assets/img/portfolio/cyberaid.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/cyberaid.png',
     link: '#'
   },
   {
     title: 'Gama GPS',
     description: 'Site intitucional.',
-    image:
-      '/assets/img/portfolio/gamagps.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/gamagps.png',
     link: '#'
   },
   {
     title: 'Team Comics',
     description: 'Portal de notícias.',
-    image:
-      '/assets/img/portfolio/teamcomics.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/teamcomics.png',
     link: '#'
   },
   {
     title: 'AP Shared',
     description: 'Aplicativo de locação de imóveis.',
-    image:
-      '/assets/img/portfolio/apshared.png', // Caminho para a imagem do projeto 1
+    image: '/assets/img/portfolio/apshared.png',
     link: '#'
   }
 ]
@@ -58,9 +51,7 @@ const PortfolioPage = () => (
   <>
     <MainContent>
       <h1>Portfólio</h1>
-
       <p>Veja uma seleção dos meus projetos mais recentes e relevantes.</p>
-
       <NextSeo
         title="Portfólio | Roberlan Carvalho"
         description="Veja uma seleção dos meus projetos mais recentes e relevantes."

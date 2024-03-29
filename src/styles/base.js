@@ -71,8 +71,9 @@ export const MainContent = styled.section`
   padding: 2rem 5rem;
 
   ${media.lessThan('large')`
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     max-width: 100%;
+    text-align: left;
   `}
 
   p,
@@ -94,7 +95,7 @@ export const MainContent = styled.section`
 
     ${media.lessThan('large')`
       padding: 0 1rem;
-      word-break: break-word;
+      word-break: break-word; // Ajuda a evitar a centralização ao garantir que o texto se ajuste dentro do contêiner
     `}
   }
 
@@ -266,4 +267,9 @@ export const MainContent = styled.section`
       opacity: 1;
     }
   }
+
+
+
+
+
 `
