@@ -24,7 +24,7 @@ export const ProjectLink = styled.a`
   background-color: transparent;
   box-shadow: none;
   border: none;
-  cursor: pointer; /* Adiciona o cursor pointer */
+  cursor: pointer;
 
   &:hover {
     color: var(--highlight);
@@ -73,8 +73,8 @@ export const ProjectImage = styled.img`
 
 export const MainContent = styled.section`
   margin: auto;
-  max-width: 100%; // Garante que o MainContent ocupa toda a largura disponível
-  padding: 0; // Remove padding horizontal que poderia limitar a largura da linha
+  max-width: 100%;
+  padding: 0;
 
   ${media.lessThan('large')`
     padding: 0; // Ajusta conforme necessário para dispositivos menores

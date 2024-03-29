@@ -27,6 +27,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
@@ -45,7 +46,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           <S.MenuBarLink
             title="Pesquisar no Blog"
             className={router.pathname === '/search' ? 'active' : ''}
-          >
+            >
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>
@@ -57,7 +58,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
             <S.MenuBarLink
               className={router.pathname === '/portfolio' ? 'active' : ''}
               title="Ver portfolio"
-            >
+              >
               <S.MenuBarItem>
                 <Dev />
                 <S.MenuBarNotification />
@@ -70,7 +71,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
             href="https://www.youtube.com/@RoberlanCarvalho/?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
-          >
+            >
             <S.MenuBarItem>
               <Youtube />
               <S.MenuBarNotification />
@@ -95,7 +96,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           }}
           className={theme}
           isDarkMode={isDarkMode}
-        >
+          >
           <Theme />
         </S.MenuBarItem>
         <S.MenuBarItem
@@ -103,7 +104,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           onClick={() => {
             window.scroll({ top: 0, behavior: 'smooth' })
           }}
-        >
+          >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>

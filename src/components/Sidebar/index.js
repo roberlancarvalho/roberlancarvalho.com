@@ -10,6 +10,8 @@ import MenuLinks from 'components/MenuLinks'
 
 import * as S from './styled'
 
+
+
 const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => (
   <S.SidebarContainer isMenuOpen={isMenuOpen}>
     <Profile
@@ -17,7 +19,7 @@ const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => (
       position={BLOG_AUTHOR_POSITION}
       authorDescription={BLOG_AUTHOR_DESCRIPTION}
       isMobileHeader={false}
-    />
+      />
     <S.SidebarLinksContainer>
       <SocialLinks />
       <MenuLinks setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />

@@ -40,7 +40,9 @@ export const ProfileAuthor = styled.h1`
   margin: 0.5rem auto 1.5rem;
 
   ${media.lessThan('large')`
-    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: .4rem;
+    font-size: 1.4rem;
     margin: 0 0 0 10px;
   `}
 `
@@ -51,8 +53,8 @@ export const ProfilePosition = styled.small`
   font-weight: 300;
 
   ${media.lessThan('large')`
-    font-size: .8rem;
-    margin-top: .2rem;
+    font-size: 1rem;
+    margin-top: .5rem;
   `}
 `
 
