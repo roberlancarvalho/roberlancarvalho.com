@@ -28,11 +28,18 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Roberlan Carvalho</title>
-        <link rel="shortcut icon" href="/assets/img/roberlancarvalho-icon.png" />
+        <link
+          rel="shortcut icon"
+          href="/assets/img/roberlancarvalho-icon.png"
+        />
         <link
           rel="apple-touch-icon"
           href="/assets/img/roberlancarvalho-icon.png"
         />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-2351736617081202"
+        ></meta>
         <meta name="theme-color" content="#06092B" />
         <meta
           name="google-site-verification"
