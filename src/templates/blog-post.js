@@ -17,6 +17,7 @@ import {
   MainContent,
   ButtonBack
 } from 'styles/base'
+import AdComponent from 'components/AdComponent'
 
 const BlogPost = ({ post }) => {
   useEffect(() => {
@@ -36,11 +37,11 @@ const BlogPost = ({ post }) => {
             {
               url: `https://og-image-service.roberlancarvalho.com.br/${encodeURIComponent(
                 post.frontmatter.title
-              )}.png`,
-              alt: `${post.frontmatter.title}`
-            }
-          ]
-        }}
+                )}.png`,
+                alt: `${post.frontmatter.title}`
+              }
+            ]
+          }}
       />
       <PostHeader>
         <Link href="/" passHref>
@@ -54,8 +55,10 @@ const BlogPost = ({ post }) => {
         <PostDescription>{post.frontmatter.description}</PostDescription>
       </PostHeader>
       <MainContent>
+          <AdComponent />
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
+          <AdComponent />
       <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
       <Comments title={post.frontmatter.title} />
     </>

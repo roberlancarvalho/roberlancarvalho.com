@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import links from './content'
 
 import * as S from './styled'
+import AdComponent from 'components/AdComponent'
 
 const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
   const router = useRouter()
@@ -24,6 +25,7 @@ const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
           </S.MenuLinksItem>
         ))}
       </S.MenuLinksList>
+      {/* <AdComponent /> */}
     </S.MenuLinksWrapper>
   )
 }

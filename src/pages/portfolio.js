@@ -1,3 +1,4 @@
+import AdComponent from 'components/AdComponent'
 import Project from 'components/Project'
 import { NextSeo } from 'next-seo'
 import { MainContent } from 'styles/base'
@@ -68,15 +69,17 @@ const PortfolioPage = () => (
       />
     </MainContent>
 
+
     {projectsList.map(({ title, description, image, link }, i) => (
       <Project
-        key={i}
-        title={title}
-        description={description}
-        image={image}
-        link={link}
+      key={i}
+      title={title}
+      description={description}
+      image={image}
+      link={link}
       />
-    ))}
+      ))}
+      <AdComponent />
   </>
 )
 
