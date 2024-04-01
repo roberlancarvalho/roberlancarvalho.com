@@ -6,10 +6,10 @@ import NextNProgress from 'nextjs-progressbar'
 import * as gtag from 'lib/gtag'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
-import Analytics from 'components/Analytics'
 
 import Layout from 'components/Layout'
 import GlobalStyles from 'styles/global'
+import Analytics from 'components/Analytics'
 
 function App({ Component, pageProps }) {
   const router = useRouter()
@@ -28,6 +28,7 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Roberlan Carvalho</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="shortcut icon"
           href="/assets/img/roberlancarvalho-icon.png"
