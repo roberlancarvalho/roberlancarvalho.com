@@ -49,6 +49,11 @@ function App({ Component, pageProps }) {
           name="description"
           content="Um blog de um desenvolvedor Full Stack apaixonado por AngularJS. Vivendo a vida de nômade digital; compartilhando conhecimento e aventuras tecnológicas."
         />
+
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#000000" />
       </Head>
       <DefaultSeo {...SEO} />
       <GlobalStyles />

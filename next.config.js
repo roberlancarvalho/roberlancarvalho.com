@@ -1,6 +1,10 @@
-module.exports = {
+const withPWA = require('next-pwa')({
+  dest: 'public', // define o destino dos arquivos do service worker
+  disable: process.env.NODE_ENV === 'development' // desativa PWA em desenvolvimento
+})
+
+module.exports = withPWA({
   webpack: (config, { dev, isServer }) => {
-    // Replace React with Preact only in client production build
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
         react: 'preact/compat',
@@ -62,4 +66,4 @@ module.exports = {
   //   ]
   // },
   images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] }
-}
+})
