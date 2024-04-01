@@ -17,7 +17,6 @@ import {
   MainContent,
   ButtonBack
 } from 'styles/base'
-import AdComponent from 'components/AdComponent'
 
 const BlogPost = ({ post }) => {
   useEffect(() => {
@@ -55,10 +54,8 @@ const BlogPost = ({ post }) => {
         <PostDescription>{post.frontmatter.description}</PostDescription>
       </PostHeader>
       <MainContent>
-          <AdComponent />
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
-          <AdComponent />
       <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
       <Comments title={post.frontmatter.title} />
     </>

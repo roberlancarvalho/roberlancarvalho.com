@@ -2,7 +2,6 @@ import { NextSeo } from 'next-seo'
 import SocialLinks from 'components/SocialLinks'
 
 import { MainContent } from 'styles/base'
-import AdComponent from 'components/AdComponent'
 
 const AboutPage = () => (
   <>
@@ -82,8 +81,6 @@ const AboutPage = () => (
         Como desenvolvedor, gamer e músico, valorizo o equilíbrio entre
         profissão e hobbies, buscando sempre uma vida harmoniosa e criativa.
       </p>
-
-      <AdComponent />
 
       <h2>Minhas Habilidades</h2>
       <ul>

@@ -3,7 +3,6 @@ import { SearchBox, Hits, Stats, Configure } from 'react-instantsearch-dom'
 import Hit from './Hit'
 
 import * as S from './styled'
-import AdComponent from 'components/AdComponent'
 
 const Search = () => {
   return (
@@ -24,7 +23,6 @@ const Search = () => {
           }}
         />
         <Hits hitComponent={Hit} />
-        <AdComponent />
         <S.SearchTitle>
           Powered by Algolia
           <S.AlgoliaIcon />

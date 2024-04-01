@@ -3,7 +3,6 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 
 import Post from 'components/Post'
 import { NextSeo } from 'next-seo'
-import AdComponent from 'components/AdComponent'
 
 const BlogList = ({ posts }) => {
   const sortedPosts = posts.sort((post1, post2) =>
@@ -68,7 +67,6 @@ const BlogList = ({ posts }) => {
           />
         ))}
       </InfiniteScroll>
-      <AdComponent />
     </>
   )
 }

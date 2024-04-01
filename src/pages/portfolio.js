@@ -1,4 +1,3 @@
-import AdComponent from 'components/AdComponent'
 import Project from 'components/Project'
 import { NextSeo } from 'next-seo'
 import { MainContent } from 'styles/base'
@@ -79,7 +78,6 @@ const PortfolioPage = () => (
       link={link}
       />
       ))}
-      <AdComponent />
   </>
 )
 

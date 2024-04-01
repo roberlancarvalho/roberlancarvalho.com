@@ -32,9 +32,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          {/* Script do AdSense */}
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351736617081202"
-                  crossOrigin="anonymous"></script>
         </Head>
         <body className="dark">
           <Main />

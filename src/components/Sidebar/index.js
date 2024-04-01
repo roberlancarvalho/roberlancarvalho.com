@@ -9,7 +9,6 @@ import SocialLinks from 'components/SocialLinks'
 import MenuLinks from 'components/MenuLinks'
 
 import * as S from './styled'
-import AdComponent from 'components/AdComponent'
 
 
 
