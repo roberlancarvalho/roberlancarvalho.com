@@ -3,6 +3,11 @@ const withPWA = require('next-pwa')({
   disable: process.env.NODE_ENV === 'development' // desativa PWA em desenvolvimento
 })
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true'
+})
+module.exports = withBundleAnalyzer({})
+
 module.exports = withPWA({
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {

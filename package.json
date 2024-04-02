@@ -6,6 +6,7 @@
   "author": "Roberlan Carvalho <roberlan.carvalho@gmail.com>",
   "dependencies": {
     "@babel/core": "^7.14.6",
+    "@next/bundle-analyzer": "^14.1.4",
     "@openlab/vercel-netlify-cms-github": "^1.1.1",
     "algoliasearch": "^4.10.2",
     "babel-plugin-prismjs": "^2.1.0",
