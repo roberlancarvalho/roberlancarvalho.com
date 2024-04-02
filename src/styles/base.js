@@ -267,9 +267,4 @@ export const MainContent = styled.section`
       opacity: 1;
     }
   }
-
-
-
-
-
 `

@@ -50,6 +50,10 @@ export const SearchWrapper = styled.section`
     &::placeholder {
       color: var(--texts);
     }
+
+    ${media.lessThan('large')`
+    margin-top: 1.2rem;
+  `}
   }
 
   .ais-SearchBox-submit,

@@ -37,14 +37,14 @@ function App({ Component, pageProps }) {
           rel="apple-touch-icon"
           href="/assets/img/roberlancarvalho-icon.png"
         />
-        <meta
+        {/* <meta
           name="google-adsense-account"
           content="ca-pub-2351736617081202"
-        ></meta>
+        ></meta> */}
         <meta name="theme-color" content="#06092B" />
         <meta
           name="google-site-verification"
-          content="8kDtWUmUQEh7QXoj_shRaxcgYAVpHs_YQ7TeniN0kmI"
+          content="EYh_eLrkcQXh226Ebrk815s_Ly0066M7W3TFTLhAgy8"
         />
         <meta
           name="description"
@@ -53,7 +53,7 @@ function App({ Component, pageProps }) {
 
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#272e39" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#272e39" />
       </Head>
       <DefaultSeo {...SEO} />
