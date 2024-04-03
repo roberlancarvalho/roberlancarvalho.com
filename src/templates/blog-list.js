@@ -42,7 +42,7 @@ const BlogList = ({ posts }) => {
         openGraph={{
           images: [
             {
-              url: '/assets/img/blog-image.png',
+              url: 'https://roberlancarvalho.com/assets/img/blog-image.png',
               width: 1200,
               height: 630,
               alt: 'Roberlan Carvalho - Blog'
