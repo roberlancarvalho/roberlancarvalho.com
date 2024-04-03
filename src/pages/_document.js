@@ -32,6 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
+        <meta property="fb:app_id" content="469241767193248" />
         </Head>
         <body className="dark">
           <Main />
