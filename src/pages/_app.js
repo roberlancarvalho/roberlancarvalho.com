@@ -37,6 +37,8 @@ function App({ Component, pageProps }) {
           rel="apple-touch-icon"
           href="/assets/img/roberlancarvalho-icon.png"
         />
+        <meta property="fb:app_id" content="469241767193248" />
+
         {/* <meta
           name="google-adsense-account"
           content="ca-pub-2351736617081202"
