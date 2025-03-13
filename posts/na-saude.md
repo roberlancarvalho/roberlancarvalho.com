@@ -3,7 +3,7 @@ layout: post
 date: 2025-03-12 12:00:00
 image: /assets/img/ia-na-saude.jpg
 title: Inteligência Artificial na Saúde - Impacto, Diretrizes e Perspectivas
-description: A Inteligência Artificial está transformando diversos ambiente e áreas. Mas como implementá-la de forma eficiente e ética? Descubra mais sobre essa revolução.
+description: A Inteligência Artificial está transformando diversas áreas. Mas como implementá-la de forma eficiente e ética? Descubra mais sobre essa revolução.
 introduction: Como a IA está mudando o setor da saúde e quais os desafios para sua implementação? Reflexões sobre minha pesquisa, suas diretrizes e o impacto dessa tecnologia.
 main-class: ia
 color: "#3776AB"
