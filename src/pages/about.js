@@ -10,7 +10,7 @@ const AboutPage = () => (
       openGraph={{
         type: 'website',
         locale: 'pt_BR',
-        url: 'https://seusite.com.br',
+        url: 'https://roberlancarvalho.com',
         site_name: 'Roberlan Carvalho',
         title:
           'Roberlan Carvalho - Desenvolvedor Full Stack e Pesquisador em IA',
@@ -33,7 +33,7 @@ const AboutPage = () => (
       </p>
 
       <p>
-        Ao longo da minha trajetória profissional, atuei no desenvolvimento e manutenção de sistemas para a <a href="https://www.unimedfortaleza.com.br/" target="_blank" rel="noopener noreferrer">Unimed Fortaleza</a>, contribuindo para a modernização de processos hospitalares e administrativos. Além disso, sou fundador da <a href="https://technorth.com.br/" target="_blank" rel="noopener noreferrer">Tech North</a>, uma empresa voltada para o desenvolvimento de software sob medida e consultoria em tecnologia.
+        Ao longo da minha trajetória profissional, atuando no desenvolvimento e manutenção de sistemas para a <a href="https://www.unimedfortaleza.com.br/" target="_blank" rel="noopener noreferrer">Unimed Fortaleza</a>, contribuindo para a modernização de sistemas voltados à otimização de processos hospitalares. Além disso, como fundador da <a href="https://technorth.com.br/" target="_blank" rel="noopener noreferrer">Tech North</a>, empresa voltada ao desenvolvimento de softwares sob medida e consultoria em tecnologia.
       </p>
 
       <p>
@@ -56,9 +56,9 @@ const AboutPage = () => (
         Além do meu trabalho no setor corporativo, desenvolvi e idealizei diversos projetos voltados para inovação tecnológica:
       </p>
       <ul>
-        <li><strong><a href="https://technorth.com.br/" target="_blank" rel="noopener noreferrer">Tech North</a></strong> – Desenvolvimento de softwares personalizados e consultoria em TI.</li>
+        <li><strong>Tech North</strong> – Empresa voltada ao desenvolvimento de softwares, gestão de projetos de softwares e consultoria.</li>
         <li><strong>Plataforma SynapsIA</strong> – Assistente virtual com IA para suporte a pacientes crônicos.</li>
-        <li><strong>APShared</strong> – Aplicativo para compartilhamento de imóveis e aluguel colaborativo.</li>
+        <li><strong>APShared</strong> – Aplicativo para compartilhamento de imóveis e aluguel.</li>
         <li><strong>MasterClient</strong> – Sistema de gestão de clientes baseado em critérios específicos.</li>
         <li><strong>AutonomIA</strong> – Ferramenta de automação baseada em IA para otimização de tarefas empresariais.</li>
       </ul>
@@ -78,6 +78,7 @@ const AboutPage = () => (
         <li>AngularJS</li>
         <li>NodeJS</li>
         <li>Java / Spring Boot</li>
+        <li>DevOps e Arquiteturas</li>
         <li>Inteligência Artificial e Machine Learning</li>
         <li>Banco de Dados: PostgreSQL, Oracle, MongoDB</li>
         <li>Automação de Processos</li>
