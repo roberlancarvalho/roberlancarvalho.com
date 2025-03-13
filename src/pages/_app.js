@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import NextNProgress from 'nextjs-progressbar'
+import Script from 'next/script' // Adicionado para GA4
 
 import * as gtag from 'lib/gtag'
 import { DefaultSeo } from 'next-seo'
@@ -10,12 +11,13 @@ import SEO from '../../next-seo.config'
 import Layout from 'components/Layout'
 import GlobalStyles from 'styles/global'
 import Analytics from 'components/Analytics'
+import { GA_TRACKING_ID } from 'lib/gtag' // Importando diretamente o ID do GA
 
 function App({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
-    const handleRouteChange = url => {
+    const handleRouteChange = (url) => {
       gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
@@ -29,33 +31,40 @@ function App({ Component, pageProps }) {
       <Head>
         <title>Roberlan Carvalho</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="shortcut icon"
-          href="/assets/img/roberlancarvalho-icon.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/assets/img/roberlancarvalho-icon.png"
-        />
-        {/* <meta
-          name="google-adsense-account"
-          content="ca-pub-2351736617081202"
-        ></meta> */}
+        <link rel="shortcut icon" href="/assets/img/roberlancarvalho-icon.png" />
+        <link rel="apple-touch-icon" href="/assets/img/roberlancarvalho-icon.png" />
         <meta name="theme-color" content="#06092B" />
-        <meta
-          name="google-site-verification"
-          content="EYh_eLrkcQXh226Ebrk815s_Ly0066M7W3TFTLhAgy8"
-        />
         <meta
           name="description"
           content="Um blog de um desenvolvedor Full Stack apaixonado por AngularJS. Vivendo a vida de nômade digital; compartilhando conhecimento e aventuras tecnológicas."
         />
-
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#272e39" />
         <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#272e39" />
       </Head>
+
+      {/* Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GA_TRACKING_ID}', {
+        page_path: window.location.pathname,
+      });
+    `,
+        }}
+      />
+
+
       <DefaultSeo {...SEO} />
       <GlobalStyles />
       <Layout>
