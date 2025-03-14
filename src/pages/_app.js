@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import NextNProgress from 'nextjs-progressbar'
-import Script from 'next/script' // Adicionado para GA4
+import Script from 'next/script'
 
 import * as gtag from 'lib/gtag'
 import { DefaultSeo } from 'next-seo'
@@ -11,7 +11,6 @@ import SEO from '../../next-seo.config'
 import Layout from 'components/Layout'
 import GlobalStyles from 'styles/global'
 import Analytics from 'components/Analytics'
-import { GA_TRACKING_ID } from 'lib/gtag' // Importando diretamente o ID do GA
 
 function App({ Component, pageProps }) {
   const router = useRouter()
@@ -47,23 +46,30 @@ function App({ Component, pageProps }) {
       {/* Google Analytics */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
       />
       <Script
         id="google-analytics"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_TRACKING_ID}', {
-        page_path: window.location.pathname,
-      });
-    `,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
+              page_path: window.location.pathname,
+            });
+          `,
         }}
       />
 
+      {/* Google AdSense - MOVIDO PARA FORA DO <Head> */}
+      <Script
+        strategy="afterInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT}
+        crossOrigin="anonymous"
+      />
 
       <DefaultSeo {...SEO} />
       <GlobalStyles />
