@@ -22,13 +22,11 @@ const getPosts = () => {
     const { data, content } = matter(fileContents)
 
     return {
-      objectID: file.replace('.md', ''), // O Algolia exige um `objectID`
-      title: data.title,
-      date: data.date,
-      description: data.description,
-      tags: data.tags || [],
-      content: content.substring(0, 300), // Pegamos um resumo do conteúdo
-      url: `/posts/${file.replace('.md', '')}`
+      objectID: file.replace('.md', ''), // Garante que cada post tem um ID único
+      title: data.title || "Sem título",
+      description: data.description || "Sem descrição",
+      date: data.date || "Sem data",
+      slug: data.slug || file.replace('.md', ''), // Garante que sempre há um slug
     }
   })
 }

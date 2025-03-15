@@ -1,11 +1,16 @@
 import Post from 'components/Post'
 
-const Hit = props => {
-  const { hit } = props
+const Hit = ({ hit }) => {
+  const slug = hit.fields?.slug || hit.slug // Tenta pegar de `fields`, se não existir, pega de `hit` diretamente
+
+  if (!slug) {
+    console.warn("⚠️ Alerta: Post sem slug", hit);
+    return null; // Evita erro caso o slug esteja faltando
+  }
 
   return (
     <Post
-      slug={hit.fields.slug}
+      slug={slug} // Usa a variável corrigida
       title={hit.title}
       date={hit.date}
       description={hit.description}

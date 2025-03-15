@@ -54,8 +54,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build && node algolia-indexer.js",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start && node algolia-indexer.js",
     "lint": "next lint"
   },
   "repository": {

@@ -10,6 +10,8 @@ const algolia = {
   indexName: process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME
 }
 
+console.log("🔍 Algolia Config:", algolia);
+
 const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey)
 
 const SearchPage = () => {
