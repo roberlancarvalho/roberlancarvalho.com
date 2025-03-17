@@ -1,22 +1,26 @@
 import Post from 'components/Post'
 
 const Hit = ({ hit }) => {
-  const slug = hit.fields?.slug || hit.slug // Tenta pegar de `fields`, se não existir, pega de `hit` diretamente
+  const slug = hit.fields?.slug || hit.slug || "";
+  const mainClass = hit.main_class || "default"; // Adiciona um valor padrão
+
+  console.log("main_class:", mainClass); // Para depuração
 
   if (!slug) {
     console.warn("⚠️ Alerta: Post sem slug", hit);
-    return null; // Evita erro caso o slug esteja faltando
+    return null;
   }
 
   return (
     <Post
-      slug={slug} // Usa a variável corrigida
+      slug={slug}
       title={hit.title}
       date={hit.date}
       description={hit.description}
-      main_class={hit.main_class}
+      main_class={mainClass} // Garante que sempre tenha um valor
     />
-  )
-}
+  );
+};
+
 
 export default Hit

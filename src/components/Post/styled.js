@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-
 import transitions from 'styles/transitions'
 
 export const PostWrapper = styled.section`
@@ -31,56 +30,69 @@ export const PostLink = styled.a`
 
 export const PostTag = styled.div`
   align-items: center;
-  background: var(--highlight);
-  border-radius: 50%;
-  color: var(--white);
-  display: flex;
-  font-size: 1.3rem;
+  background: ${({ color }) => {
+    const colorMap = {
+      dev: '#A91E63',        // Rosa forte
+      tech: '#BF5722',       // Laranja vibrante
+      leitura: '#3F51B5',    // Azul escuro
+      js: '#FFEB3B',         // Amarelo brilhante
+      code: '#FF9800',       // Laranja queimado
+      design: '#9C27B0',     // Roxo vibrante
+      devops: '#00BCD4',     // Ciano forte
+      tips: '#8BC34A',       // Verde claro
+      ia: '#673AB7',         // Roxo escuro
+      css: '#03A9F4',        // Azul brilhante
+      dicas: '#FFC107',      // Amarelo dourado
+      'ui/ux': '#F44336',    // Vermelho forte
+      seg: '#795548',        // Marrom
+      backend: '#607D8B',    // Azul acinzentado
+      frontend: '#FF4081',   // Rosa neon
+      mobile: '#009688',     // Verde esmeralda
+      database: '#4CAF50',   // Verde clássico
+      cloud: '#2196F3',      // Azul tradicional
+      segurança: '#D50000',  // Vermelho intenso
+      inovação: '#7C4DFF',   // Roxo elétrico
+    };
+
+    return colorMap[color?.toLowerCase()] || Object.values(colorMap)[Math.floor(Math.random() * Object.values(colorMap).length)];
+  }};
+  
+  color: #fff;
+  font-size: 1.1rem;  /* Texto um pouco maior */
   font-weight: 700;
-  justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  ${media.lessThan('large')`
-    border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
-    padding: .2rem .5rem;
-    margin-bottom: .7rem;
+  /* 🔵 Aumentamos o tamanho das bolinhas no desktop */
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  ${media.lessThan('medium')`
+    /* 🔶 Formato RETANGULAR para telas menores */
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: auto;
+    height: auto;
+    padding: 5px 12px;
+    min-width: 55px;
+    min-height: 35px;
+
+    /* 🔹 Adicionamos um espaçamento inferior para não colar no texto */
+    margin-bottom: 10px;
   `}
+`;
 
-  &.is-js {
-    background: #d6ba32;
-    color: #000;
-  }
-
-  &.is-misc {
-    background: #47650b;
-  }
-
-  &.is-dev {
-    background: #61728f;
-  }
-
-  &.is-svg {
-    background: #7d669e;
-  }
-
-  &.is-css {
-    background: #24809e;
-  }
-
-  &.is-jekyll {
-    background: #b31917;
-  }
-`
 
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+  margin-bottom: 1rem;
 
   ${media.lessThan('large')`
     margin: 0;

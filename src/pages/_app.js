@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import NextNProgress from 'nextjs-progressbar'
-import Script from 'next/script'
 
 import * as gtag from 'lib/gtag'
 import { DefaultSeo } from 'next-seo'
@@ -41,35 +40,36 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#272e39" />
         <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#272e39" />
+
+        {/* Google AdSense carregado de forma manual para evitar erro */}
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        ></script>
       </Head>
 
       {/* Google Analytics */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-
-      {/* Google AdSense - MOVIDO PARA FORA DO <Head> */}
-      <Script
-        strategy="afterInteractive"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT}
-        crossOrigin="anonymous"
-      />
+      {process.env.NEXT_PUBLIC_GA_TRACKING && (
+        <>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+            }}
+          />
+        </>
+      )}
 
       <DefaultSeo {...SEO} />
       <GlobalStyles />
