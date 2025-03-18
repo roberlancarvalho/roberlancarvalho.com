@@ -17,7 +17,7 @@ const Hit = ({ hit }) => {
       title={hit.title}
       date={hit.date}
       description={hit.description}
-      main_class={mainClass} // Garante que sempre tenha um valor
+      main_class={mainClass}
     />
   );
 };

@@ -3,8 +3,8 @@ title: CMS próprio ou Wordpress?
 description: Qual a melhor opção na hora de escolher o CMS para a sua aplicação?
 date: 2021-12-08 05:53:44
 thumbnail: /assets/img/cms-.png
-main-class: tech
-color: '#E53935'
+main-class: inovação
+color: '#673AB7'
 ---
 
 ### O que é um CMS?

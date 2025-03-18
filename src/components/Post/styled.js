@@ -29,69 +29,66 @@ export const PostLink = styled.a`
 `
 
 export const PostTag = styled.div`
+  display: flex;
   align-items: center;
-  background: ${({ color }) => {
-    const colorMap = {
-      dev: '#A91E63',        // Rosa forte
-      tech: '#BF5722',       // Laranja vibrante
-      leitura: '#3F51B5',    // Azul escuro
-      js: '#FFEB3B',         // Amarelo brilhante
-      code: '#FF9800',       // Laranja queimado
-      design: '#9C27B0',     // Roxo vibrante
-      devops: '#00BCD4',     // Ciano forte
-      tips: '#8BC34A',       // Verde claro
-      ia: '#673AB7',         // Roxo escuro
-      css: '#03A9F4',        // Azul brilhante
-      dicas: '#FFC107',      // Amarelo dourado
-      'ui/ux': '#F44336',    // Vermelho forte
-      seg: '#795548',        // Marrom
-      backend: '#607D8B',    // Azul acinzentado
-      frontend: '#FF4081',   // Rosa neon
-      mobile: '#009688',     // Verde esmeralda
-      database: '#4CAF50',   // Verde clássico
-      cloud: '#2196F3',      // Azul tradicional
-      segurança: '#D50000',  // Vermelho intenso
-      inovação: '#7C4DFF',   // Roxo elétrico
-    };
-
-    return colorMap[color?.toLowerCase()] || Object.values(colorMap)[Math.floor(Math.random() * Object.values(colorMap).length)];
-  }};
-  
+  justify-content: center;
   color: #fff;
-  font-size: 1.1rem;  /* Texto um pouco maior */
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* 🔵 Aumentamos o tamanho das bolinhas no desktop */
-  width: 80px;
-  height: 80px;
   flex-shrink: 0;
-  margin-right: 10px;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+
+  background: ${({ color }) => {
+    const gradientMap = {
+      dev: 'linear-gradient(135deg, #1565C0 0%, #0D47A1 100%)', // Azul escuro
+      tech: 'linear-gradient(135deg, #00838F 0%, #006064 100%)', // Azul petróleo
+      nerd: 'linear-gradient(135deg, #3949AB 0%, #1A237E 100%)', // Azul médio
+      js: 'linear-gradient(135deg, #FDD835 0%, #FFEB3B 100%)', // Amarelo equilibrado
+      code: 'linear-gradient(135deg, #FB8C00 0%, #F57C00 100%)', // Laranja quente
+      design: 'linear-gradient(135deg, #8E24AA 0%, #9C27B0 100%)', // Roxo elegante
+      devops: 'linear-gradient(135deg, #0097A7 0%, #00796B 100%)', // Azul petróleo escuro
+      tips: 'linear-gradient(135deg, #7CB342 0%, #558B2F 100%)', // Verde suave
+      ia: 'linear-gradient(135deg, #5E35B1 0%, #4527A0 100%)', // Roxo médio
+      css: 'linear-gradient(135deg, #0288D1 0%, #01579B 100%)', // Azul brilhante
+      dicas: 'linear-gradient(135deg, #FFA000 0%, #FF8F00 100%)', // Amarelo dourado
+      'ui/ux': 'linear-gradient(135deg, #E53935 0%, #B71C1C 100%)', // Vermelho moderado
+      seg: 'linear-gradient(135deg, #6D4C41 0%, #4E342E 100%)', // Marrom escuro
+      backend: 'linear-gradient(135deg, #546E7A 0%, #37474F 100%)', // Azul acinzentado escuro
+      frontend: 'linear-gradient(135deg, #EC407A 0%, #D81B60 100%)', // Rosa forte
+      mobile: 'linear-gradient(135deg, #00796B 0%, #004D40 100%)', // Verde escuro suave
+      database: 'linear-gradient(135deg, #388E3C 0%, #1B5E20 100%)', // Verde clássico
+      cloud: 'linear-gradient(135deg, #1976D2 0%, #0D47A1 100%)', // Azul médio escuro
+      segurança: 'linear-gradient(135deg, #C62828 0%, #B71C1C 100%)', // Vermelho intenso
+      inovação: 'linear-gradient(135deg, #673AB7 0%, #512DA8 100%)', // Roxo elétrico
+    };
+
+    return gradientMap[color?.toLowerCase()] || 'linear-gradient(135deg, #777 0%, #444 100%)';
+  }};
+
+  width: 85px;
+  height: 85px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 
   ${media.lessThan('medium')`
-    /* 🔶 Formato RETANGULAR para telas menores */
     border-radius: 5px;
     font-size: 0.9rem;
     width: auto;
     height: auto;
-    padding: 5px 12px;
-    min-width: 55px;
-    min-height: 35px;
-
-    /* 🔹 Adicionamos um espaçamento inferior para não colar no texto */
+    padding: 6px 14px;
+    min-width: 60px;
+    min-height: 40px;
     margin-bottom: 10px;
   `}
 `;
 
-
 export const PostInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
   margin-bottom: 1rem;
 
   ${media.lessThan('large')`

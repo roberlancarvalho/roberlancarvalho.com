@@ -1,17 +1,16 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router' // Importando o useRouter
+import { useRouter } from 'next/router'
 import * as S from './styled'
 
 const Post = ({ slug, date, timeToRead, title, description, main_class }) => {
-  const router = useRouter(); // Obtém a rota atual
+  const router = useRouter();
 
   return (
     <Link href={slug} passHref>
       <S.PostLink>
         <S.PostWrapper>
-          {/* Só exibe a bolinha se NÃO estiver na página de busca */}
           {main_class && router.pathname !== '/search' && (
-            <S.PostTag className={`is-${main_class}`}>{main_class}</S.PostTag>
+            <S.PostTag color={main_class?.toLowerCase()}>{main_class}</S.PostTag>
           )}
           <S.PostInfo>
             <S.PostDate>
