@@ -18,6 +18,7 @@
     "next-instantsearch": "^0.3.15",
     "next-pwa": "^5.6.0",
     "next-seo": "^4.26.0",
+    "next-sitemap": "^4.2.3",
     "nextjs-google-analytics": "^2.3.7",
     "nextjs-progressbar": "^0.0.11",
     "preact": "^10.5.14",
@@ -55,8 +56,9 @@
   "scripts": {
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build && node algolia-indexer.js",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start && node algolia-indexer.js",
-    "lint": "next lint"
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start && node algolia-indexer.js && npm run postbuild",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "repository": {
     "type": "git",

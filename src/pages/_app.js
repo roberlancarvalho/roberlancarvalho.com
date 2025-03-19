@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import NextNProgress from 'nextjs-progressbar'
+import Script from 'next/script';
 
 import * as gtag from 'lib/gtag'
 import { DefaultSeo } from 'next-seo'
@@ -27,15 +28,23 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Roberlan Carvalho</title>
+        <title>Roberlan Carvalho | Desenvolvedor Full Stack, IA e Inovação</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Desenvolvedor Full-Stack, apaixonado por inovação, desenvolvimento web e inteligência artificial. Compartilho experiências, dicas e projetos. Acompanhe!"
+        />
+        <meta name="keywords" content="Programador, Desenvolvimento Web, Next.js, IA, Inovação, Full Stack" />
+        <meta name="author" content="Roberlan Carvalho" />
+        <meta name="robots" content="index, follow" />
+
+        <meta name="google-site-verification" content="EYh_eLrkcQXh226Ebrk815s_Ly0066M7W3TFTLhAgy8" />
+
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+
         <link rel="shortcut icon" href="/assets/img/roberlancarvalho-icon.png" />
         <link rel="apple-touch-icon" href="/assets/img/roberlancarvalho-icon.png" />
         <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="Um blog de um desenvolvedor Full Stack apaixonado por AngularJS. Vivendo a vida de nômade digital; compartilhando conhecimento e aventuras tecnológicas."
-        />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#272e39" />
         <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
@@ -52,20 +61,22 @@ function App({ Component, pageProps }) {
       {/* Google Analytics */}
       {process.env.NEXT_PUBLIC_GA_TRACKING && (
         <>
-          <script
-            async
+          <Script
+            strategy="afterInteractive"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
           />
-          <script
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
-                  page_path: window.location.pathname,
-                });
-              `,
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
+            page_path: window.location.pathname,
+          });
+        `,
             }}
           />
         </>

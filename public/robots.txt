@@ -1,3 +1,9 @@
-# robotstxt.org/
-
+# *
 User-agent: *
+Allow: /
+
+# Host
+Host: https://roberlancarvalho.com
+
+# Sitemaps
+Sitemap: https://roberlancarvalho.com/sitemap.xml
