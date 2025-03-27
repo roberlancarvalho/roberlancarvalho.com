@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Container = styled.section`
   align-items: center;
-  background-image: url('https://willianjusten.com.br/assets/img/john-404.gif');
+  background-image: url('https://roberlancarvalho.com/assets/img/john-404.gif');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 800px;

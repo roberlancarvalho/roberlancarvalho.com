@@ -11,19 +11,17 @@ const algolia = {
   indexName: process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME
 }
 
-console.log("🔍 Algolia Config:", algolia);
-
 const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey)
 
 const SearchPage = () => {
   const [isMounted, setIsMounted] = useState(true);
 
   useEffect(() => {
-    let isActive = true; // Variável de controle para verificar se o componente ainda está montado
+    let isActive = true; 
 
     return () => {
-      isActive = false; // Define como falso quando o componente for desmontado
-      searchClient.clearCache(); // Libera a memória do Algolia
+      isActive = false;
+      searchClient.clearCache();
       setIsMounted(false);
     };
   }, []);

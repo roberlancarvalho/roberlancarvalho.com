@@ -1,18 +1,17 @@
 const withPWA = require("next-pwa")({
-  dest: "public", // Define a pasta onde os arquivos do PWA serão gerados
-  disable: process.env.NODE_ENV === "development", // Desativa PWA no modo de desenvolvimento
+  dest: "public", 
+  disable: process.env.NODE_ENV === "development", 
 });
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true", // Ativa a análise do bundle quando a variável ANALYZE=true
+  enabled: process.env.ANALYZE === "true",
 });
 
 module.exports = withBundleAnalyzer(
   withPWA({
-    reactStrictMode: true, // Ativa o modo estrito do React para detectar possíveis problemas na aplicação
+    reactStrictMode: true, 
 
     webpack: (config, { dev, isServer }) => {
-      // Usa Preact para otimizar o bundle no ambiente de produção
       if (!dev && !isServer) {
         Object.assign(config.resolve.alias, {
           react: "preact/compat",
@@ -25,7 +24,6 @@ module.exports = withBundleAnalyzer(
 
     async rewrites() {
       return [
-        // Redirecionamentos personalizados
         { source: "/js/", destination: "https://roberlancarvalho.com/" },
         { source: "/jekyll/", destination: "https://roberlancarvalho.com/" },
         { source: "/svg/", destination: "https://roberlancarvalho.com/" },
@@ -75,7 +73,7 @@ module.exports = withBundleAnalyzer(
     // },
 
     images: {
-      domains: ["pbs.twimg.com", "avatars.githubusercontent.com"], // Permite imagens externas desses domínios
+      domains: ["pbs.twimg.com", "avatars.githubusercontent.com"], 
     },
   })
 );
