@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2025-04-01 12:00:00
-image: /assets/img/ia-no-dia-a-dia.jpg
+image: /assets/img/ia-no-dia-a-dia.webp
 title: Como Funciona a Inteligência Artificial e Como Ela Pode Mudar Sua Vida Profissional e Pessoal
 description: A Inteligência Artificial está presente no nosso cotidiano — do trabalho, da forma como consumimos conteúdo às nossas decisões. Entenda como ela funciona e o impacto real na sua vida.
 introduction: Inteligência Artificial não é só coisa de filme futurista. Ela já está transformando a forma como trabalhamos, aprendemos, consumimos e até nos relacionamos. Mas como isso tudo funciona na prática?
@@ -17,7 +17,7 @@ tags:
 
 ## O que é Inteligência Artificial e como ela funciona?
 
-![IA no dia-dia](assets/img/ia-no-dia-a-dia.jpg)
+![IA no dia-dia](assets/img/ia-no-dia-a-dia.webp)
 
 A Inteligência Artificial (IA) é a área da tecnologia que tenta ensinar máquinas a "pensar", de forma parecida com os humanos. Isso não significa consciência, mas sim a capacidade de aprender com dados, reconhecer padrões e tomar decisões inteligentes.
 
@@ -47,7 +47,7 @@ Vamos descomplicar alguns dos termos mais falados quando o assunto é IA:
 - Traduzir textos automaticamente
 - Compreender comandos de voz como o “Ok, Google”
 
-![Redes neurais](assets/img/redes-neurais.jpg)
+![Redes neurais](assets/img/redes-neurais.webp)
 
 ## Tipos de Inteligência Artificial por aplicação
 
@@ -116,7 +116,7 @@ Esses sistemas conseguem **aprender com dados recentes** e melhorar com o tempo,
 
 ### Níveis de Complexidade da IA
 
-![IA forte](assets/img/ia-forte.jpg)
+![IA forte](assets/img/ia-forte.webp)
 
 A Inteligência Artificial pode ser classificada também conforme o **nível de complexidade** da sua inteligência. Essa classificação ajuda a entender o que já é realidade, o que está em desenvolvimento e o que ainda é especulativo.
 
