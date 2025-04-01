@@ -32,12 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          <title>{post.title}</title>
-          <meta name="description" content={post.description} />
-          <meta property="og:title" content={post.title} />
-          <meta property="og:description" content={post.description} />
-          <meta property="og:image" content={`${siteUrl}${post.image}`} />
-          <meta property="og:url" content={`${siteUrl}/posts/${post.slug}`} />
+        <meta property="fb:app_id" content="469241767193248" />
         </Head>
         <body className="dark">
           <Main />
