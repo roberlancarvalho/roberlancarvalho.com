@@ -34,14 +34,21 @@ const BlogPost = ({ post }) => {
           description: post.frontmatter.description,
           images: [
             {
-              url: `https://og-image-service.roberlancarvalho.com.br/${encodeURIComponent(
-                post.frontmatter.title
-                )}.png`,
-                alt: `${post.frontmatter.title}`
-              }
-            ]
-          }}
+              url: post.frontmatter.image
+                ? (post.frontmatter.image.startsWith('http')
+                  ? post.frontmatter.image
+                  : `https://roberlancarvalho.com.br${post.frontmatter.image}`)
+                : 'https://roberlancarvalho.com.br/images/default-og.png',
+
+              alt: `${post.frontmatter.title}`,
+              width: 1200,
+              height: 630
+            }
+          ],
+          type: 'article'
+        }}
       />
+
       <PostHeader>
         <Link href="/" passHref>
           <ButtonBack>← Voltar na listagem</ButtonBack>

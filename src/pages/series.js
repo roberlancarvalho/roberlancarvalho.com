@@ -37,7 +37,7 @@ const SeriesPage = ({ posts }) => {
   return (
     <>
       <NextSeo
-        title="Series | Willian Justen"
+        title="Series | Roberlan Carvalho"
         description="Aqui ficarão as series em que iremos abordar sobre determinados assuntos."
         openGraph={{
           images: [
