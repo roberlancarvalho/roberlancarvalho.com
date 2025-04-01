@@ -37,8 +37,8 @@ const BlogPost = ({ post }) => {
               url: post.frontmatter.image
                 ? (post.frontmatter.image.startsWith('http')
                   ? post.frontmatter.image
-                  : `https://roberlancarvalho.com.br${post.frontmatter.image}`)
-                : 'https://roberlancarvalho.com.br/images/default-og.png',
+                  : `https://roberlancarvalho.com${post.frontmatter.image}`)
+                : 'https://roberlancarvalho.com/images/default-og.png',
 
               alt: `${post.frontmatter.title}`,
               width: 1200,
