@@ -14,4 +14,4 @@ export const BLOG_URL = 'https://roberlancarvalho.com'
 export const BLOG_AUTHOR_POSITION = 'Software Developer'
 
 export const BLOG_AUTHOR_DESCRIPTION =
-  'Desenvolvedor de softwares, estudante de TI, inovador. Gamer, trilheiro e músico nas horas vagas.'
+  'Desenvolvedor de softwares Fullstack, Bacharel em Sistemas de Informação, Pós-graduando em Inteligência Artificial, empreendedor. Gamer, trilheiro e músico nas horas vagas.'
