@@ -27,7 +27,6 @@ Por trás dessas ações, estão muitos dados, lógica matemática e algoritmos 
 
 ## Conceitos-chave para entender melhor
 
-![Redes neurais](assets/img/redes-neurais.jpg)
 
 Vamos descomplicar alguns dos termos mais falados quando o assunto é IA:
 
@@ -47,6 +46,8 @@ Vamos descomplicar alguns dos termos mais falados quando o assunto é IA:
 - Reconhecer rostos em fotos
 - Traduzir textos automaticamente
 - Compreender comandos de voz como o “Ok, Google”
+
+![Redes neurais](assets/img/redes-neurais.jpg)
 
 ## Tipos de Inteligência Artificial por aplicação
 
