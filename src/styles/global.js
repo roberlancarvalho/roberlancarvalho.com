@@ -85,5 +85,17 @@ const GlobalStyles = createGlobalStyle`
     --black: #222;
   }
 
+  pre {
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+  code {
+  word-break: break-word;
+}
+
+
 `
 export default GlobalStyles
