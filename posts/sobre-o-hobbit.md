@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2025-03-27 12:00:00
-image: /assets/img/o-hobbit.jpg
+date: 2025-03-27 21:43:46
+image: /assets/img/toca.png
 title: Li O Hobbit e Aprendi Mais Sobre Mim do que Eu Esperava
 description: Muito além de uma aventura fantástica, O Hobbit nos ensina sobre coragem, caráter, propósito e soft skills essenciais para a vida e o trabalho.
 introduction: Em uma jornada inesperada, Bilbo Bolseiro me mostrou que até os menores podem mudar o rumo do mundo. Um livro que vai muito além da fantasia.
@@ -15,9 +15,13 @@ tags:
   - fantasia
 ---
 
-## O melhor livro que já li.
+## O melhor livro.
 
-Sempre que alguém me pergunta qual o melhor livro que eu já li, eu respondo com convicção: *"O Hobbit"*.
+"Numa toca no chão vivia um Hobbit..."
+
+![Livro: O Hobbit de J.R.R. Tolkien](assets/img/toca.jpg)
+
+Sempre que alguém me pergunta qual o melhor livro que eu já li, eu sempre respondo com convicção: *"O Hobbit"*.
 Escrito por J.R.R. Tolkien, *O Hobbit* é uma daquelas obras que marcam a gente de um jeito que é difícil explicar. A princípio, parece apenas uma história de fantasia com anões, dragões e um mago excêntrico. Mas por trás dessa jornada mágica existe um convite profundo à reflexão — sobre coragem, propósito, identidade, e até sobre nossas habilidades humanas no mundo real.
 
 ![Livro: O Hobbit de J.R.R. Tolkien](assets/img/o-hobbit.jpg)
@@ -50,7 +54,7 @@ Essa atitude me lembrou da importância da **indoneidade profissional**. Na vida
 > Em um mundo onde muitos buscam atalhos, ser como Bilbo — honesto, leal e com senso de justiça — é um diferencial.
 
 ![Bilbo Bolseiro](/assets/img/bilbo.jpg)  
-*Bilbo Bolseiro – Filme O Hobbit. Fonte: [Liber Proeliis Wiki](https://liberproeliis.fandom.com/pt-br/wiki/Bilbo_Bolseiro)*
+*Ilustração de Bilbo Bolseiro – Livro O Hobbit. Fonte: [Liber Proeliis Wiki](https://liberproeliis.fandom.com/pt-br/wiki/Bilbo_Bolseiro)*
 
 
 ## Soft Skills e o poder da humildade
