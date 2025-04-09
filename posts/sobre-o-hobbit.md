@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2025-03-27 21:43:46
-image: /assets/img/toca.png
+image: /assets/img/toca.jpg
 title: Li O Hobbit e Aprendi Mais Sobre Mim do que Eu Esperava
 description: Muito além de uma aventura fantástica, O Hobbit nos ensina sobre coragem, caráter, propósito e soft skills essenciais para a vida e o trabalho.
 introduction: Em uma jornada inesperada, Bilbo Bolseiro me mostrou que até os menores podem mudar o rumo do mundo. Um livro que vai muito além da fantasia.
