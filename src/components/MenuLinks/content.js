@@ -11,14 +11,14 @@ const links = [
     label: 'Portfólio',
     url: '/portfolio'
   },
-  {
-     label: 'Séries',
-     url: '/series'
-   },
-  {
-    label: 'Trilhas e Viagens',
-     url: 'https://google.com/'
-  }
+  // {
+  //    label: 'Séries',
+  //    url: '/series'
+  //  },
+  // {
+  //   label: 'Trilhas e Viagens',
+  //    url: '/trilhas-e-viagens'
+  // }
   // {
   //   label: 'Fotografia',
   //   url: 'https://google.com/'
