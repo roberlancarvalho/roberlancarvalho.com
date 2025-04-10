@@ -11,10 +11,10 @@ const links = [
     label: 'Portfólio',
     url: '/portfolio'
   },
-  // {
-  //    label: 'Séries',
-  //    url: '/series'
-  //  },
+  {
+     label: 'Galeria',
+     url: '/gallery'
+   },
   // {
   //   label: 'Trilhas e Viagens',
   //    url: '/trilhas-e-viagens'
