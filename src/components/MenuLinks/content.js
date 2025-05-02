@@ -15,6 +15,10 @@ const links = [
      label: 'Galeria',
      url: '/gallery'
    },
+  {
+     label: 'Livros',
+     url: '/books'
+   },
   // {
   //   label: 'Trilhas e Viagens',
   //    url: '/trilhas-e-viagens'

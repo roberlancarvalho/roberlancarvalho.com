@@ -68,16 +68,15 @@ const PortfolioPage = () => (
       />
     </MainContent>
 
-
     {projectsList.map(({ title, description, image, link }, i) => (
       <Project
-      key={i}
-      title={title}
-      description={description}
-      image={image}
-      link={link}
+        key={i}
+        title={title}
+        description={description}
+        image={image}
+        link={link}
       />
-      ))}
+    ))}
   </>
 )
 
