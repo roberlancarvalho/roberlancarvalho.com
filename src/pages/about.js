@@ -29,7 +29,7 @@ const AboutPage = () => (
     <MainContent>
       <h1>Sobre Mim</h1>
       <p>
-        Olá! Sou <strong>Roberlan Carvalho</strong>, desenvolvedor Full Stack, entusiasta de tecnologia. Meu trabalho é focado no desenvolvimento de soluções tecnológicas, com destaque para aplicações em Inteligência Artificial, inovação e gestão de sistemas empresariais.
+        Sou <strong><a href="http://lattes.cnpq.br/7931430602114384" target="_blank" rel="noopener noreferrer">Roberlan Carvalho</a></strong>, desenvolvedor Full Stack Pleno na <a href="https://www.claro.com.br/" target="_blank" rel="noopener noreferrer">Claro</a>, entusiasta de tecnologia. Meu trabalho é focado no desenvolvimento de soluções tecnológicas, com destaque para aplicações em Inteligência Artificial, inovação e gestão de sistemas empresariais.
       </p>
 
       <p>
@@ -37,7 +37,7 @@ const AboutPage = () => (
       </p>
 
       <p>
-        Sou <strong>bacharel em Sistemas de Informação</strong> pela <a href="http://unicatolicaquixada.edu.br/" target="_blank" rel="noopener noreferrer">Unicatólica de Quixadá</a> e atualmente curso Especialização em <strong>Inteligência Artificial</strong> pela <a href="https://www.utfpr.edu.br/" target="_blank" rel="noopener noreferrer">Universidade Tecnológica Federal do Paraná (UTFPR)</a>. Meu artigo científico <a href="https://roberlancarvalho.com/ia-na-saude" target="_blank" rel="noopener noreferrer">Inteligência Artificial na Saúde: Diretrizes para uma Implementação Eficaz</a> tem como foco a aplicação da IA na saúde, abordando boas práticas para sua implementação ética e eficaz em ambientes de saúde.
+        Sou <strong>bacharel em Sistemas de Informação</strong> pela <a href="http://unicatolicaquixada.edu.br/" target="_blank" rel="noopener noreferrer">Unicatólica de Quixadá</a> e atualmente curso Especialização em <strong>Inteligência Artificial</strong> pela <a href="https://www.utfpr.edu.br/" target="_blank" rel="noopener noreferrer">Universidade Tecnológica Federal do Paraná (UTFPR)</a>. Meu artigo científico <a href="https://doi.org/10.25191/recs.v10i1.1493" target="_blank" rel="noopener noreferrer">Inteligência Artificial na Saúde: Diretrizes para uma Implementação Eficaz</a> tem como foco a aplicação da IA na saúde, abordando boas práticas para sua implementação ética e eficaz em ambientes de saúde.
       </p>
 
       <h2>Minhas Experiências</h2>
