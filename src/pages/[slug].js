@@ -12,8 +12,8 @@ export async function getStaticProps({ params }) {
   const slug = params.slug
   const post = getPostBySlug(slug)
   const content = await markdownToHtml(post.content || '')
+  
 
-  // get prev/next posts
   const allPosts = getAllPosts()
   const currentPostIndex = allPosts.findIndex(p => p.slug === slug)
   const nextPost = allPosts[currentPostIndex - 1] ?? null
