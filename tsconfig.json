@@ -14,13 +14,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "ignoreDeprecations": "6.0",
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "src",
     "paths": {
       "@/*": [
-        "./*"
+        "src/*"
       ]
     },
     "plugins": [
