@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/*
+ * Runtime dark/light tokens, ported 1:1 from src/styles/global.js.
+ * Theme switching stays JS-driven (body.dark / body.light, set in
+ * _document.js + MenuBar) — Tailwind just consumes the same CSS vars,
+ * it does not replace the toggle mechanism.
+ */
+body.dark {
+  --background: #272e39;
+  --borders: #38444d;
+  --texts: #ccc;
+  --post-color: #fff;
+  --highlight: #62b0d3;
+  --medium-background: #141e29;
+  --white: #fff;
+  --black: #222;
+}
+
+body.light {
+  --background: #fff;
+  --borders: #dedede;
+  --texts: #666;
+  --post-color: #111;
+  --highlight: #62b0d3;
+  --medium-background: #f5f5f5;
+  --white: #fff;
+  --black: #222;
+}
+
+@theme {
+  /* Colors — resolve to whichever theme is active on <body> at runtime */
+  --color-background: var(--background);
+  --color-borders: var(--borders);
+  --color-texts: var(--texts);
+  --color-post: var(--post-color);
+  --color-highlight: var(--highlight);
+  --color-medium-background: var(--medium-background);
+
+  /* Breakpoints — ported from styled-media-query defaults used via media.lessThan */
+  --breakpoint-small: 450px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 1170px;
+  --breakpoint-huge: 1440px;
+
+  /* Transitions — ported from src/styles/transitions.js */
+  --default-transition-duration: 200ms;
+  --default-transition-timing-function: ease;
+}

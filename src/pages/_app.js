@@ -12,6 +12,11 @@ import Layout from 'components/Layout'
 import GlobalStyles from 'styles/global'
 import Analytics from 'components/Analytics'
 
+// Additive: Tailwind v4 utility classes become available for new code
+// (e.g. pages/dev/design-system.js) without touching the existing
+// styled-components pages. See docs/decisions.md.
+import 'styles/tailwind.css'
+
 function App({ Component, pageProps }) {
   const router = useRouter()
 
