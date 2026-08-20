@@ -1,12 +1,11 @@
 ---
-layout: post
-date: 2025-04-04 23:48:52
-image: /assets/img/kafka-python.png
 title: Como conectei duas IAs - Prática com Python, Docker e Mensageria com Apache Kafka
+slug: mensageria-kafka-ia
+date: 2025-04-04T23:48:52
 description: Neste post, mostro passo a passo como fiz duas inteligências artificiais conversarem entre si usando Apache Kafka, Python, Docker e conceitos modernos de arquitetura distribuída.
 introduction: Já pensou em fazer duas IAs se comunicarem de forma assíncrona, simulando um cenário de microserviços reais? Foi exatamente isso que experimentei, e neste artigo te mostro como funciona na prática essa integração com Kafka.
-main-class: tech
-color: "#2b2e4a"
+image: /assets/img/kafka-python.png
+category: tech
 tags:
   - tech
   - kafka
@@ -15,6 +14,7 @@ tags:
   - arquitetura distribuída
   - microserviços
   - ia
+draft: false
 ---
 
 ## Introdução

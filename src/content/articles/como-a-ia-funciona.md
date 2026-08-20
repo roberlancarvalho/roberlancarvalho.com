@@ -1,18 +1,18 @@
 ---
-layout: post
-date: 2025-04-01 12:00:00
-image: /assets/img/ia-no-dia-a-dia.png
 title: Como Funciona a Inteligência Artificial e Como Ela Pode Mudar Sua Vida Profissional e Pessoal
+slug: como-a-ia-funciona
+date: 2025-04-01T12:00:00
 description: A Inteligência Artificial está presente no nosso cotidiano — do trabalho, da forma como consumimos conteúdo às nossas decisões. Entenda como ela funciona e o impacto real na sua vida.
 introduction: Inteligência Artificial não é só coisa de filme futurista. Ela já está transformando a forma como trabalhamos, aprendemos, consumimos e até nos relacionamos. Mas como isso tudo funciona na prática?
-main-class: ia
-color: "#123456"
+image: /assets/img/ia-no-dia-a-dia.png
+category: ia
 tags:
   - inteligência artificial
   - tecnologia
   - futuro
   - carreira
   - cotidiano
+draft: false
 ---
 
 ## O que é Inteligência Artificial e como ela funciona?

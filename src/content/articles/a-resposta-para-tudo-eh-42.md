@@ -1,13 +1,12 @@
 ---
 title: A resposta para tudo é 42
+slug: a-resposta-para-tudo-eh-42
+date: 2021-12-08T03:45:33
 description: "Segundo O Guia do Mochileiro das Galáxias, 42 é a resposta para todas as perguntas."
-date: 2021-12-08 03:45:33
-thumbnail: /assets/img/unnamed.jpg
-main-class: 'nerd'
-background: "nerd"
-color: "#3949AB"
+image: /assets/img/unnamed.jpg
+category: nerd
+draft: false
 ---
-
 
 ## A raiz da questão
 
@@ -50,13 +49,13 @@ t=1272653,06 segundos = 21210,8843 minutos = 353,514739 horas = 14,7 dias de via
 
 Outra delas está ligada à programação:
 
-Como é sabido, Douglas Adams manjava de programação.
+Como é sabido, Douglas Adams manjava de programação.
 
-Quando convertemos o números ASCII para texto, 42 é o * (asterisco).
+Quando convertemos o números ASCII para texto, 42 é o * (asterisco).
 
 Em programação o * é um símbolo de qualquer valor.
 
-Então Pequenos Gafanhotos,  o 42 equivaleria a qualquer coisa que você queria que seja.
+Então Pequenos Gafanhotos,  o 42 equivaleria a qualquer coisa que você queria que seja.
 
 Há também um problema científico:
 
@@ -74,15 +73,15 @@ E existem as teorias relacionadas ao cinema/livros:
 
 * #### Harry Potter
 
-Na página 42 do livro de J.K.Rowling A Pedra filosofal, Harry descobre a magia.
+Na página 42 do livro de J.K.Rowling A Pedra filosofal, Harry descobre a magia.
 
 * #### O Iluminado
 
-Além da aparição na camisa de Danny, o número se repete algumas vezes no filme. No hotel existem 42 carros estacionados; durante o filme, Wendy e Danny assistem ao filme ‘O verão de 42’; O quarto 237, se multiplicar os elementos, resulta em 42 (2x3x7).
+Além da aparição na camisa de Danny, o número se repete algumas vezes no filme. No hotel existem 42 carros estacionados; durante o filme, Wendy e Danny assistem ao filme ‘O verão de 42’; O quarto 237, se multiplicar os elementos, resulta em 42 (2x3x7).
 
 * #### Alice no Pais das Maravilhas
 
-A primeira versão de Alice no País das Maravilhas, de Lewis Carrol, contém 42 ilustrações originais.
+A primeira versão de Alice no País das Maravilhas, de Lewis Carrol, contém 42 ilustrações originais.
 
 * #### Frankenstein
 

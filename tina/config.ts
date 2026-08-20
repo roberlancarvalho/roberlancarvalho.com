@@ -15,6 +15,9 @@ const branch =
 // Real, currently-populated taxonomy (was "main-class" in the old Netlify
 // CMS config.yml) — replaces the never-populated "categories" field that
 // left /series permanently empty. See docs/decisions.md.
+// Union of the old CMS's declared options AND the values actually found in
+// the 9 real posts during migration ("nerd", "inovação" weren't in the
+// config.yml select but were genuinely used) — nothing real gets dropped.
 const ARTICLE_CATEGORIES = [
   'tech',
   'leitura',
@@ -28,7 +31,9 @@ const ARTICLE_CATEGORIES = [
   'css',
   'dicas',
   'ui/ux',
-  'seg'
+  'seg',
+  'nerd',
+  'inovação'
 ]
 
 export default defineConfig({
@@ -58,7 +63,10 @@ export default defineConfig({
         path: 'src/content/articles',
         format: 'md',
         ui: {
-          router: ({ document }) => `/artigos/${document._sys.filename}`
+          // Aponta pra URL real de hoje (/[slug], sem prefixo) — a
+          // reestruturação pra /artigos/[slug] é uma fase futura separada
+          // (ver docs/redirects.md). Atualizar junto quando isso mudar.
+          router: ({ document }) => `/${document._sys.filename}`
         },
         fields: [
           { type: 'string', name: 'title', label: 'Título', isTitle: true, required: true },
@@ -68,10 +76,16 @@ export default defineConfig({
             label: 'Slug (URL)',
             required: true,
             description:
-              'Usado em /artigos/seu-slug. Não altere depois de publicado — quebra links existentes e redirects de SEO.'
+              'Usado em /seu-slug (nome do arquivo). Não altere depois de publicado — quebra links existentes.'
           },
           { type: 'datetime', name: 'date', label: 'Data', required: true },
           { type: 'string', name: 'description', label: 'Descrição (SEO/preview)', required: true },
+          {
+            type: 'string',
+            name: 'introduction',
+            label: 'Introdução (teaser curto, opcional)',
+            ui: { component: 'textarea' }
+          },
           { type: 'image', name: 'image', label: 'Imagem de capa' },
           {
             type: 'string',

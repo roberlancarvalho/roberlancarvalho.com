@@ -1,17 +1,17 @@
 ---
-layout: post
-date: 2025-03-12 10:00:00
-image: /assets/img/software-sob-medida.jpg
 title: Desenvolvimento de Softwares sob Medida - Vale a Pena para Empresas?
+slug: desenvolvimento-de-softwares-sob-medida
+date: 2025-03-12T10:00:00
 description: Entenda os prós e contras do desenvolvimento de software personalizado e descubra se vale a pena para sua empresa.
 introduction: Softwares personalizados podem revolucionar a forma como empresas operam, trazendo maior eficiência, escalabilidade e segurança. Mas será que vale a pena investir em uma solução sob medida?
-main-class: dev
-color: "#007BFF"
+image: /assets/img/software-sob-medida.jpg
+category: dev
 tags:
   - tecnologia
   - software
   - desenvolvimento
   - empresas
+draft: false
 ---
 
 ## O que é um Software Sob Medida?
