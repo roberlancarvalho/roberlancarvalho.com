@@ -7,10 +7,7 @@ const algoliasearch = require('algoliasearch')
 const client = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.ALGOLIA_ADMIN_KEY)
 const index = client.initIndex(process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME)
 
-// Posts migrated to src/content/articles/ during the App Router bump
-// (see docs/decisions.md) — this indexer needs to point at the new
-// location too, or it 404s on every build.
-const postsDirectory = path.join(process.cwd(), 'src/content/articles')
+const postsDirectory = path.join(process.cwd(), 'posts')
 
 const getPosts = () => {
   const files = fs.readdirSync(postsDirectory)
