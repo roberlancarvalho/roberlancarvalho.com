@@ -12,15 +12,6 @@
 /.next/
 /out/
 *.xml
-next-env.d.ts
-
-# typescript
-*.tsbuildinfo
-
-# tinacms
-/tina/__generated__
-/.tina
-/public/admin
 
 # production
 /build

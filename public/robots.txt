@@ -1,5 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Disallow: /admin
 
+# Host
+Host: https://roberlancarvalho.com
+
+# Sitemaps
 Sitemap: https://roberlancarvalho.com/sitemap.xml
