@@ -37,3 +37,10 @@ export function getAllPosts() {
 
   return posts
 }
+
+// Listas e links só precisam dos metadados; o corpo inteiro inflaria o JSON de cada página
+export function withoutContent(post) {
+  if (!post) return null
+  const { content, ...meta } = post
+  return meta
+}

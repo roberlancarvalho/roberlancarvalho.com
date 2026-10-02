@@ -7,7 +7,8 @@ const transitions = {
   DEFAULT: defaultTransition,
   COLOR: colorTransition,
   BACKGROUND: bgTransition,
-  ALL: defaultTiming
+  ALL: defaultTiming,
+  EASE: 'cubic-bezier(0.22, 1, 0.36, 1)'
 }
 
 export default transitions

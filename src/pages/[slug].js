@@ -1,5 +1,5 @@
 import BlogPost from 'templates/blog-post'
-import { getPostBySlug, getAllPosts } from 'lib/api'
+import { getPostBySlug, getAllPosts, withoutContent } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
 
 const Post = post => {
@@ -16,8 +16,8 @@ export async function getStaticProps({ params }) {
 
   const allPosts = getAllPosts()
   const currentPostIndex = allPosts.findIndex(p => p.slug === slug)
-  const nextPost = allPosts[currentPostIndex - 1] ?? null
-  const prevPost = allPosts[currentPostIndex + 1] ?? null
+  const nextPost = withoutContent(allPosts[currentPostIndex - 1])
+  const prevPost = withoutContent(allPosts[currentPostIndex + 1])
 
   return {
     props: {

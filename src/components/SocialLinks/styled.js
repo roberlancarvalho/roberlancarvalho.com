@@ -34,4 +34,10 @@ export const IconWrapper = styled.div`
   fill: #bbb;
   width: 30px;
   height: 30px;
+  transition: transform 0.3s ${transitions.EASE}, fill 0.2s ease;
+
+  a:hover & {
+    fill: var(--highlight);
+    transform: translateY(-4px) scale(1.1);
+  }
 `

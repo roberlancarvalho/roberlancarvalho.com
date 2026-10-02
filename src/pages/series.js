@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 import slugify from 'slugify'
-import { getAllPosts } from 'lib/api'
+import { getAllPosts, withoutContent } from 'lib/api'
 import { unique } from 'lib/utils'
 
 import Post from 'components/Post'
@@ -77,7 +77,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts
+      posts: posts.map(withoutContent)
     }
   }
 }
