@@ -27,7 +27,7 @@ const AboutPage = () => (
       }}
     />
     <MainContent>
-      <h1>Sobre Mima</h1>
+      <h1>Sobre Mim</h1>
       <p>
         Sou{' '}
         <strong>

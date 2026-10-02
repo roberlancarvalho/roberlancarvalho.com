@@ -52,7 +52,7 @@ export const PostTag = styled.div`
 
   ${PostLink}:hover & {
     transform: scale(1.08) rotate(-4deg);
-    box-shadow: 0 8px 24px rgba(98, 176, 211, 0.35);
+    box-shadow: 0 8px 24px rgba(56, 189, 248, 0.35);
   }
 
   background: ${({ color }) => {

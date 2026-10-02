@@ -4,8 +4,8 @@
   "description": "Blog pessoal sobre tecnologia, desenvolvimento e inovação.",
   "id": "/",
   "start_url": "/",
-  "background_color": "#272e39",
-  "theme_color": "#62b0d3",
+  "background_color": "#0f172a",
+  "theme_color": "#38bdf8",
   "display": "standalone",
   "scope": "/",
   "icons": [

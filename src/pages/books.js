@@ -94,7 +94,7 @@ const BooksPage = () => {
           <div
             onClick={e => e.stopPropagation()}
             style={{
-              background: '#272e39',
+              background: 'var(--background)',
               padding: '2rem',
               borderRadius: '8px',
               maxWidth: '500px',
@@ -134,7 +134,7 @@ const BooksPage = () => {
                 marginTop: '1rem',
                 display: 'inline-block',
                 padding: '0.5rem 1rem',
-                background: '#62b0d3',
+                background: 'var(--highlight)',
                 color: '#000',
                 borderRadius: '4px',
                 textDecoration: 'none'

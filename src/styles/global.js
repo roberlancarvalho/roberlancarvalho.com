@@ -64,23 +64,23 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body.dark {
-    --background: #272e39;
-    --borders: #38444d;
-    --texts: #ccc;
-    --postColor: #fff;
-    --highlight: #62b0d3;
-    --mediumBackground: #141E29;
+    --background: #0f172a;
+    --borders: #1e293b;
+    --texts: #cbd5e1;
+    --postColor: #f8fafc;
+    --highlight: #38bdf8;
+    --mediumBackground: #0b1120;
     --white: #fff;
     --black: #222;
   }
 
   body.light {
     --background: #fff;
-    --borders: #dedede;
-    --texts: #666;
-    --postColor: #111;
-    --highlight: #62b0d3;
-    --mediumBackground: #f5f5f5;
+    --borders: #e2e8f0;
+    --texts: #475569;
+    --postColor: #0f172a;
+    --highlight: #0284c7;
+    --mediumBackground: #f8fafc;
     --white: #fff;
     --black: #222;
   }
