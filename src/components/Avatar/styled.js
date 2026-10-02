@@ -4,6 +4,11 @@ import media from 'styled-media-query'
 export const AvatarWrapper = styled.div`
   img {
     border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  &:hover img {
+    transform: scale(1.08);
   }
 
   margin: auto;

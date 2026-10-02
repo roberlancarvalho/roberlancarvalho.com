@@ -32,10 +32,15 @@ export const MenuLinksItem = styled.li`
   a {
     color: var(--texts);
     text-decoration: none;
-    transition: ${transitions.COLOR};
+    background: linear-gradient(var(--highlight), var(--highlight)) left bottom /
+      0 1px no-repeat;
+    padding-bottom: 2px;
+    transition: ${transitions.COLOR}, background-size 0.35s ${transitions.EASE};
 
-    &:hover {
+    &:hover,
+    &.active {
       color: var(--highlight);
+      background-size: 100% 1px;
     }
   }
 `

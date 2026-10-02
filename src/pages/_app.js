@@ -92,7 +92,9 @@ function App({ Component, pageProps }) {
           height={5}
           showSpinner={false}
         />
-        <Component {...pageProps} />
+        <div key={router.asPath} className="page-enter">
+          <Component {...pageProps} />
+        </div>
         <Analytics />
       </Layout>
     </>

@@ -52,4 +52,18 @@ export const RecommendedLink = styled.a`
     content: '\\2192';
     margin-left: 0.5rem;
   }
+
+  &:before,
+  &:after {
+    display: inline-block;
+    transition: transform 0.3s ${transitions.EASE};
+  }
+
+  &.previous:hover:before {
+    transform: translateX(-6px);
+  }
+
+  &.next:hover:after {
+    transform: translateX(6px);
+  }
 `

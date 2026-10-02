@@ -22,9 +22,19 @@ export const PostLink = styled.a`
   display: flex;
   text-decoration: none;
   transition: ${transitions.COLOR};
+  animation: fadeUp 0.35s ${transitions.EASE} both;
+
+  ${Array.from(
+    { length: 10 },
+    (_, i) => `&:nth-child(${i + 1}) { animation-delay: ${i * 30}ms; }`
+  ).join('\n')}
 
   &:hover {
     color: var(--highlight);
+  }
+
+  &:hover ${PostWrapper} {
+    background: var(--mediumBackground);
   }
 `
 
@@ -38,7 +48,12 @@ export const PostTag = styled.div`
   text-transform: uppercase;
   flex-shrink: 0;
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.4s ${transitions.EASE}, box-shadow 0.4s ${transitions.EASE};
+
+  ${PostLink}:hover & {
+    transform: scale(1.08) rotate(-4deg);
+    box-shadow: 0 8px 24px rgba(98, 176, 211, 0.35);
+  }
 
   background: ${({ color }) => {
     const gradientMap = {
@@ -64,8 +79,16 @@ export const PostTag = styled.div`
       inovação: 'linear-gradient(135deg, #673AB7 0%, #512DA8 100%)', // Roxo elétrico
     };
 
-    return gradientMap[color?.toLowerCase()] || 'linear-gradient(135deg, #777 0%, #444 100%)';
+    const key = color?.toLowerCase()
+    const slug = key?.normalize('NFD').replace(/[̀-ͯ]/g, '')
+    const art = ['dev', 'ia', 'inovacao', 'nerd', 'tech', 'tips'].includes(slug)
+      ? slug
+      : 'circuit'
+    const gradient = gradientMap[key] || 'linear-gradient(135deg, #777 0%, #444 100%)'
+
+    return `url('/assets/img/categories/${art}.svg') center / cover no-repeat, ${gradient}`
   }};
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   width: 85px;
   height: 85px;
@@ -90,6 +113,11 @@ export const PostInfo = styled.div`
   flex-direction: column;
   margin-left: 1.2rem;
   margin-bottom: 1rem;
+  transition: transform 0.4s ${transitions.EASE};
+
+  ${PostLink}:hover & {
+    transform: translateX(6px);
+  }
 
   ${media.lessThan('large')`
     margin: 0;
