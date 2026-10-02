@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { getAllPosts } from 'lib/api'
+import { getAllPosts, withoutContent } from 'lib/api'
 import { buildAlgoliaIndexes } from 'lib/buildAlgoliaIndexes'
 import { generateRss } from 'lib/generateRSS'
 import { generateSitemap } from 'lib/generateSitemap'
@@ -24,7 +24,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts
+      posts: posts.map(withoutContent)
     }
   }
 }
