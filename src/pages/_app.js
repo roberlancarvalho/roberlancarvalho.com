@@ -44,11 +44,10 @@ function App({ Component, pageProps }) {
 
         <link rel="shortcut icon" href="/assets/img/roberlancarvalho-icon.png" />
         <link rel="apple-touch-icon" href="/assets/img/roberlancarvalho-icon.png" />
-        <meta name="theme-color" content="#06092B" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#272e39" />
+        <meta name="theme-color" content="#0f172a" />
         <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png" />
-        <meta name="apple-mobile-web-app-status-bar" content="#272e39" />
+        <meta name="apple-mobile-web-app-status-bar" content="#0f172a" />
 
         {/* Google AdSense carregado de forma manual para evitar erro */}
         <script
@@ -86,7 +85,7 @@ function App({ Component, pageProps }) {
       <GlobalStyles />
       <Layout>
         <NextNProgress
-          color="#62b0d3"
+          color="#38bdf8"
           startPosition={0.3}
           stopDelayMs={200}
           height={5}
