@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: roberlancarvalho/roberlancarvalho.com  # Seu repositório GitHub
-  base_url: https://roberlancarvalho.com  # URL base para a autenticação
+  base_url: https://www.roberlancarvalho.com  # URL base para a autenticação
   auth_endpoint: api/auth  # Endpoint de autenticação correspondente ao Authorization callback URL no GitHub
 
 media_folder: public/assets/img  # Pasta onde os arquivos de mídia serão salvos
@@ -28,7 +28,7 @@ collections:
       - label: 'Main Class'
         name: 'main-class'
         widget: 'select'
-        options: ['tech', 'leitura', 'js', 'dev', 'code', 'design', 'devops', 'tips', 'ia', 'css', 'dicas', 'ui/ux', 'seg']
+        options: ['tech', 'leitura', 'js', 'dev', 'code', 'design', 'devops', 'tips', 'ia', 'css', 'dicas', 'ui/ux', 'seg', 'nerd', 'inovação']
 
 
       - label: 'Color'
