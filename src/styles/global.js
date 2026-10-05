@@ -111,6 +111,15 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  @keyframes heroZoom {
+    from {
+      transform: scale(1.06);
+    }
+    to {
+      transform: none;
+    }
+  }
+
   .page-enter {
     animation: fadeUp 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
   }

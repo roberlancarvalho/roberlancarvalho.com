@@ -7,13 +7,16 @@ import { getAllPosts, withoutContent } from 'lib/api'
 import { unique } from 'lib/utils'
 
 import Post from 'components/Post'
+import PageHeader from 'components/PageHeader'
+import { Container } from 'styles/base'
 
 const SeriesTitle = styled.h2`
   background: var(--borders);
   color: var(--texts);
   font-size: 2rem;
   font-weight: 700;
-  padding: 1rem 4.4rem;
+  margin-top: 2rem;
+  padding: 1rem 1.4rem;
 
   ${media.lessThan('large')`
     font-size: 1.5rem;
@@ -51,23 +54,28 @@ const SeriesPage = ({ posts }) => {
         }}
       />
 
-      {categories.map((category, i) => (
-        <section key={i}>
-          <SeriesTitle id={slugifyCategory(category)}># {category}</SeriesTitle>
+      <PageHeader title="Séries" description="Posts agrupados por assunto." />
+      <Container>
+        {categories.map((category, i) => (
+          <section key={i}>
+            <SeriesTitle id={slugifyCategory(category)}>
+              # {category}
+            </SeriesTitle>
 
-          {getPostsByCategory(category).map(post => (
-            <Post
-              key={post.slug}
-              slug={post.slug}
-              title={post.frontmatter.title}
-              date={post.frontmatter.date}
-              description={post.frontmatter.description}
-              main_class={post.frontmatter.main_class}
-              disableCard={true}
-            />
-          ))}
-        </section>
-      ))}
+            {getPostsByCategory(category).map(post => (
+              <Post
+                key={post.slug}
+                slug={post.slug}
+                title={post.frontmatter.title}
+                date={post.frontmatter.date}
+                description={post.frontmatter.description}
+                main_class={post.frontmatter.main_class}
+                disableCard={true}
+              />
+            ))}
+          </section>
+        ))}
+      </Container>
     </>
   )
 }

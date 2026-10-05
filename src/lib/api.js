@@ -15,6 +15,14 @@ export function getPostBySlug(slug) {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
+  // Imagem local apontada no frontmatter mas ausente em /public: ignora, para cair no fallback
+  if (
+    data.image?.startsWith('/') &&
+    !fs.existsSync(join(process.cwd(), 'public', data.image))
+  ) {
+    delete data.image
+  }
+
   const date = format(new Date(data.date), "dd 'de' MMMM 'de' yyyy", {
     locale: pt
   })
