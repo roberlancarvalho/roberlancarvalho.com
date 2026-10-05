@@ -1,22 +1,15 @@
 import Prism from 'prismjs'
 
 import { useEffect } from 'react'
-import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 
 import { timeToRead } from 'lib/utils'
 
+import PageHeader from 'components/PageHeader'
 import RecommendedPosts from 'components/RecommendedPosts'
 import Comments from 'components/Comments'
 
-import {
-  PostHeader,
-  PostTitle,
-  PostDescription,
-  PostDate,
-  MainContent,
-  ButtonBack
-} from 'styles/base'
+import { MainContent } from 'styles/base'
 
 const BlogPost = ({ post }) => {
   useEffect(() => {
@@ -35,9 +28,9 @@ const BlogPost = ({ post }) => {
           images: [
             {
               url: post.frontmatter.image
-                ? (post.frontmatter.image.startsWith('http')
+                ? post.frontmatter.image.startsWith('http')
                   ? post.frontmatter.image
-                  : `https://roberlancarvalho.com${post.frontmatter.image}`)
+                  : `https://roberlancarvalho.com${post.frontmatter.image}`
                 : 'https://roberlancarvalho.com/images/default-og.png',
 
               alt: `${post.frontmatter.title}`,
@@ -49,17 +42,14 @@ const BlogPost = ({ post }) => {
         }}
       />
 
-      <PostHeader>
-        <Link href="/" passHref>
-          <ButtonBack>← Voltar na listagem</ButtonBack>
-        </Link>
-
-        <PostDate>
-          {post.frontmatter.date} • {timeToRead(post.content)}
-        </PostDate>
-        <PostTitle>{post.frontmatter.title}</PostTitle>
-        <PostDescription>{post.frontmatter.description}</PostDescription>
-      </PostHeader>
+      <PageHeader
+        backHref="/"
+        meta={`${post.frontmatter.date} • ${timeToRead(post.content)}`}
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+        category={post.frontmatter['main-class'] || 'tech'}
+      />
       <MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>

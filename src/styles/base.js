@@ -1,78 +1,24 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import transitions from './transitions'
 
-export const PostHeader = styled.header`
-  color: var(--postColor);
-  margin: auto;
+// Coluna padrão de todas as páginas: mesma largura e mesmo recuo.
+// Os blocos dentro dela recuam 1.4rem (1rem no mobile) para alinhar o texto.
+export const Container = styled.div`
+  margin: 0 auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
+  padding: 0 5rem;
 
   ${media.lessThan('large')`
-    padding: 3rem 0 0;
     max-width: 100%;
+    padding: 0;
   `}
 `
 
-export const PostTitle = styled.h1`
-  font-size: 4rem;
-  font-weight: 700;
-  padding: 0 1.4rem;
-  margin: 1rem auto;
+export const MainContent = styled(Container)`
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   ${media.lessThan('large')`
-    font-size: 2.8rem;
-    line-height: 1.1;
-    padding: 0 1rem;
-  `}
-`
-
-export const PostDescription = styled.h2`
-  font-size: 2rem;
-  font-weight: 200;
-  padding: 0 1.4rem;
-
-  ${media.lessThan('large')`
-    font-size: 1.6rem;
-    line-height: 1.3;
-    padding: 0 1rem;
-  `}
-`
-
-export const ButtonBack = styled.a`
-  color: var(--texts);
-  display: flex;
-  text-decoration: none;
-  margin: 0 0 1.5rem 1.5rem;
-  transition: ${transitions.COLOR};
-
-  ${media.lessThan('large')`
-    margin: 0 0 1.5rem 1rem;
-  `}
-
-  &:hover {
-    color: var(--highlight);
-  }
-`
-
-export const PostDate = styled.p`
-  font-size: 1.1rem;
-  font-weight: 100;
-  padding: 0 1.4rem;
-
-  ${media.lessThan('large')`
-    padding: 0 1rem;
-  `}
-`
-
-export const MainContent = styled.section`
-  margin: auto;
-  max-width: 70rem;
-  padding: 2rem 5rem;
-
-  ${media.lessThan('large')`
-    padding: 2rem 1rem;
-    max-width: 100%;
     text-align: left;
   `}
 

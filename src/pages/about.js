@@ -1,5 +1,6 @@
 import SocialLinks from 'components/SocialLinks'
 import { NextSeo } from 'next-seo'
+import PageHeader from 'components/PageHeader'
 import { MainContent } from 'styles/base'
 
 const AboutPage = () => (
@@ -26,8 +27,11 @@ const AboutPage = () => (
         ]
       }}
     />
+    <PageHeader
+      title="Sobre Mim"
+      description="Desenvolvedor Full Stack, CEO da Tech North e pesquisador em Inteligência Artificial."
+    />
     <MainContent>
-      <h1>Sobre Mim</h1>
       <p>
         Sou{' '}
         <strong>

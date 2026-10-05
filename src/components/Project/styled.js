@@ -5,7 +5,7 @@ import transitions from 'styles/transitions'
 export const ProjectWrapper = styled.section`
   align-items: center;
   display: flex;
-  padding: 2rem 3rem;
+  padding: 2rem 1.4rem;
   width: 100%;
   border-bottom: 1px solid var(--borders);
 

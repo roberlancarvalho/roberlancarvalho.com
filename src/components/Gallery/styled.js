@@ -4,11 +4,12 @@ export const GalleryWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
-  padding: 1rem;
+  padding: 1rem 1.4rem;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 10px;
+    padding: 1rem;
   }
 `
 
@@ -108,9 +109,10 @@ export const ThemeTitle = styled.h2`
   color: var(--texts);
   font-weight: bold;
   text-align: left;
-  padding-left: 1rem;
+  padding: 0 1.4rem;
 
   @media (max-width: 768px) {
+    padding: 0 1rem;
     font-size: 1.4rem;
   }
 `
@@ -120,9 +122,10 @@ export const ThemeDescription = styled.p`
   font-size: 1rem;
   color: var(--texts);
   text-align: left;
-  padding-left: 1rem;
+  padding: 0 1.4rem;
 
   @media (max-width: 768px) {
+    padding: 0 1rem;
     font-size: 0.9rem;
   }
 `

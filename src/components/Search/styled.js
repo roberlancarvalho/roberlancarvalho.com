@@ -18,18 +18,10 @@ export const SearchWrapper = styled.section`
 
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1.4rem;
 
     ${media.lessThan('large')`
       padding: 0.5rem 1rem;
-    `}
-  }
-
-  .ais-SearchBox {
-    padding-top: 6rem;
-
-    ${media.lessThan('large')`
-      padding-top: 1rem;
     `}
   }
 
@@ -50,10 +42,6 @@ export const SearchWrapper = styled.section`
     &::placeholder {
       color: var(--texts);
     }
-
-    ${media.lessThan('large')`
-    margin-top: 1.2rem;
-  `}
   }
 
   .ais-SearchBox-submit,
@@ -66,7 +54,7 @@ export const SearchTitle = styled.h1`
   color: var(--texts);
   font-size: 1rem;
   font-weight: 700;
-  padding: 3rem 2rem;
+  padding: 3rem 1.4rem;
   text-align: right;
 
   ${media.lessThan('large')`

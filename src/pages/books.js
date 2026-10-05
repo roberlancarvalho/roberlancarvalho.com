@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NextSeo } from 'next-seo'
+import PageHeader from 'components/PageHeader'
 import { MainContent } from 'styles/base'
 
 const booksList = [
@@ -34,13 +35,11 @@ const BooksPage = () => {
         }}
       />
 
+      <PageHeader
+        title="Livros"
+        description="Conheça algumas das minhas publicações voltadas para tecnologia, produtividade e IA."
+      />
       <MainContent>
-        <h1>Livros</h1>
-        <p>
-          Conheça algumas das minhas publicações voltadas para tecnologia,
-          produtividade e IA.
-        </p>
-
         <div style={{ display: 'grid', gap: '2rem' }}>
           {booksList.map((book, index) => (
             <div key={index}>
@@ -50,7 +49,7 @@ const BooksPage = () => {
                 style={{
                   maxWidth: '300px',
                   borderRadius: '8px',
-                  cursor: 'pointer',
+                  cursor: 'pointer'
                 }}
                 onClick={() => setSelectedBook(book)}
               />
@@ -62,8 +61,7 @@ const BooksPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  marginTop: '1rem',
-                  
+                  marginTop: '1rem'
                 }}
               >
                 Ver mais
@@ -109,7 +107,7 @@ const BooksPage = () => {
             <h2
               style={{
                 marginTop: '0.5rem',
-                color: '#fff',
+                color: 'var(--postColor)',
                 fontSize: '1.5rem',
                 textAlign: 'center'
               }}
@@ -119,7 +117,7 @@ const BooksPage = () => {
             <p
               style={{
                 marginTop: '0.5rem',
-                color: '#fff',
+                color: 'var(--postColor)',
                 fontSize: '1rem',
                 textAlign: 'center'
               }}
@@ -149,7 +147,7 @@ const BooksPage = () => {
                 marginTop: '1rem',
                 background: 'transparent',
                 border: 'none',
-                color: '#fff',
+                color: 'var(--texts)',
                 textDecoration: 'underline',
                 cursor: 'pointer'
               }}
