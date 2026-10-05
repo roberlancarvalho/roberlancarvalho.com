@@ -23,13 +23,21 @@ const gradientMap = {
 
 const arts = ['dev', 'ia', 'inovacao', 'nerd', 'tech', 'tips']
 
-// Degradê da categoria + ilustração SVG por cima (padrão de circuito se não houver arte própria)
-export function categoryBackground(category, fit = 'cover no-repeat') {
+// Degradê e arte SVG da categoria (padrão de circuito se não houver arte própria)
+export function categoryTheme(category) {
   const key = category?.toLowerCase()
   const slug = key?.normalize('NFD').replace(/[̀-ͯ]/g, '')
-  const art = arts.includes(slug) ? slug : 'circuit'
   const gradient =
     gradientMap[key] || 'linear-gradient(135deg, #777 0%, #444 100%)'
 
-  return `url('/assets/img/categories/${art}.svg') center / ${fit}, ${gradient}`
+  return {
+    gradient,
+    colors: gradient.match(/#[0-9a-f]{6}/gi),
+    art: `/assets/img/categories/${arts.includes(slug) ? slug : 'circuit'}.svg`
+  }
+}
+
+export function categoryBackground(category, fit = 'cover no-repeat') {
+  const { art, gradient } = categoryTheme(category)
+  return `url('${art}') center / ${fit}, ${gradient}`
 }

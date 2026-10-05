@@ -7,6 +7,7 @@ import { timeToRead } from 'lib/utils'
 
 import PageHeader from 'components/PageHeader'
 import RecommendedPosts from 'components/RecommendedPosts'
+import Share from 'components/Share'
 import Comments from 'components/Comments'
 
 import { MainContent } from 'styles/base'
@@ -53,6 +54,14 @@ const BlogPost = ({ post }) => {
       <MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
+      <Share
+        slug={post.slug}
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        category={post.frontmatter['main-class']}
+        image={post.frontmatter.image}
+        tags={post.frontmatter.tags || []}
+      />
       <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
       <Comments title={post.frontmatter.title} />
     </>
